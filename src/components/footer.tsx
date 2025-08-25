@@ -1,5 +1,7 @@
 import { Github, Linkedin, Mail, Rocket, Twitter } from "lucide-react";
+
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -9,7 +11,7 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <Rocket className="h-8 w-8 text-blue-400" />
+              <Image src="/min-logo.png" alt="Project Wavefront Logo" width={30} height={30} />
               <span className="text-xl font-bold text-white">
                 Project Wavefront
               </span>
@@ -21,7 +23,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/projectwavefront"
+                href="https://github.com/LanceGuy5/project-wavefront-site"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-blue-400 transition-colors"
@@ -45,7 +47,7 @@ export default function Footer() {
                 <Twitter className="h-6 w-6" />
               </a>
               <a
-                href="mailto:contact@projectwavefront.org"
+                href="mailto:admin@projectwavefront.org"
                 className="text-slate-400 hover:text-blue-400 transition-colors"
               >
                 <Mail className="h-6 w-6" />
@@ -96,17 +98,16 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <div className="space-y-2 text-slate-300">
-              <p>University of California</p>
-              <p>Berkeley, CA 94720</p>
-              <p>contact@projectwavefront.org</p>
-              <p>(510) 555-WAVE</p>
+              <p>University of Pennsylvania</p>
+              <p>Philadelphia, PA 19104</p>
+              <p>admin@projectwavefront.org</p>
             </div>
           </div>
         </div>
 
         <div className="border-t border-slate-700/50 mt-8 pt-8 text-center">
           <p className="text-slate-400">
-            © 2024 Project Wavefront. All rights reserved. Built by students,
+            © 2025 Project Wavefront. All rights reserved. Built by students,
             for the future.
           </p>
         </div>

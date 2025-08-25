@@ -1,21 +1,28 @@
 "use client";
 
 import Galaxy from "@/components/blocks/Backgrounds/Galaxy/Galaxy";
+import Squares from "@/components/blocks/Backgrounds/Squares/Squares";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
   ChevronDown,
   Globe,
-  Rocket,
   Target,
   Zap,
 } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function HomePage() {
   const [isVisible, setIsVisible] = useState(false);
+
+  // TODO figure out where sponsors are going
+  const sponsors = [
+    '/sponsors/nasa.png',
+    '/sponsors/converge.png',
+  ];
 
   useEffect(() => {
     setIsVisible(true);
@@ -28,9 +35,9 @@ export default function HomePage() {
         <Galaxy
           mouseRepulsion={false}
           mouseInteraction={false}
-          density={1}
+          density={0.4}
           glowIntensity={0.2}
-          saturation={0.0}
+          saturation={0.4}
           hueShift={140}
           rotationSpeed={0.05}
           starSpeed={0.3}
@@ -41,7 +48,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center space-x-2">
-              <Rocket className="h-8 w-8 text-primary animate-pulse" />
+              <Image src="/min-logo.png" alt="Project Wavefront Logo" width={30} height={30} />
               <span className="text-xl font-bold">Project Wavefront</span>
             </Link>
             <div className="hidden md:flex space-x-8">
@@ -79,9 +86,6 @@ export default function HomePage() {
           <div
             className={`transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
           >
-            <Badge className="mb-6 bg-primary/20 text-primary border-primary/30 animate-pulse">
-              World&apos;s First Student-Built RDRE Innovation
-            </Badge>
             <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
               Project Wavefront
             </h1>
@@ -97,7 +101,7 @@ export default function HomePage() {
               <Link href="/technology">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg"
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg hover:cursor-pointer"
                 >
                   Explore Technology <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -106,7 +110,7 @@ export default function HomePage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 bg-transparent px-8 py-4 text-lg"
+                  className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400/10 bg-transparent px-8 py-4 text-lg hover:cursor-pointer"
                 >
                   View Performance
                 </Button>
@@ -120,9 +124,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative z-10 py-24 px-4 sm:px-6 lg:px-8">
+      <section className="relative z-10 py-24 px-4 sm:px-6 lg:px-8 min-h-screen bg-[#0a0a0f]">
+        <div className="absolute inset-0 z-[-1]">
+          <Squares
+            speed={0.5}
+            squareSize={40}
+            direction="diagonal"
+            borderColor="#3e255c"
+            hoverFillColor="#222"
+          />
+        </div>
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Why Wavefront Changes Everything
             </h2>
@@ -132,7 +145,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="group p-8 rounded-2xl bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 hover:scale-105">
+            <div className="group p-8 rounded-2xl bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-blue-500/40 hover:border-blue-400/60 transition-all duration-300 hover:scale-105">
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full mb-6 group-hover:scale-110 transition-transform">
                 <Zap className="h-8 w-8 text-white" />
               </div>
@@ -145,7 +158,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="group p-8 rounded-2xl bg-gradient-to-br from-purple-900/20 to-cyan-900/20 border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 hover:scale-105">
+            <div className="group p-8 rounded-2xl bg-gradient-to-br from-purple-900/40 to-cyan-900/40 border border-purple-500/40 hover:border-purple-400/60 transition-all duration-300 hover:scale-105">
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-full mb-6 group-hover:scale-110 transition-transform">
                 <Target className="h-8 w-8 text-white" />
               </div>
@@ -158,7 +171,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="group p-8 rounded-2xl bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-300 hover:scale-105">
+            <div className="group p-8 rounded-2xl bg-gradient-to-br from-cyan-900/40 to-blue-900/40 border border-cyan-500/40 hover:border-cyan-400/46 transition-all duration-300 hover:scale-105">
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full mb-6 group-hover:scale-110 transition-transform">
                 <Globe className="h-8 w-8 text-white" />
               </div>

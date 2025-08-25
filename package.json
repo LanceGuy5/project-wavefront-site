@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "format": "prettier --write --ignore-path .gitignore . --plugin=prettier-plugin-organize-imports",
+    "format:check": "prettier --check --ignore-path .gitignore . --plugin=prettier-plugin-organize-imports"
   },
   "dependencies": {
     "react": "19.1.0",
@@ -22,6 +24,8 @@
     "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.0",
-    "@eslint/eslintrc": "^3"
+    "@eslint/eslintrc": "^3",
+    "prettier": "^3.6.2",
+    "prettier-plugin-organize-imports": "^4.1.0"
   }
 }

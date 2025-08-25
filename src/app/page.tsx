@@ -1,5 +1,6 @@
 "use client";
 
+import Galaxy from "@/components/blocks/Backgrounds/Galaxy/Galaxy";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -22,6 +23,20 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen text-foreground relative overflow-hidden">
+      {/* Galaxy background with jet black, limited to first viewport */}
+      <div className="absolute inset-x-0 top-0 w-full h-[100vh] bg-black z-[-1]">
+        <Galaxy
+          mouseRepulsion={false}
+          mouseInteraction={false}
+          density={1}
+          glowIntensity={0.2}
+          saturation={0.0}
+          hueShift={140}
+          rotationSpeed={0.05}
+          starSpeed={0.3}
+        />
+      </div>
+
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">

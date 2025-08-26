@@ -2,27 +2,17 @@
 
 import Galaxy from "@/components/blocks/Backgrounds/Galaxy/Galaxy";
 import Squares from "@/components/blocks/Backgrounds/Squares/Squares";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-  ArrowRight,
-  ChevronDown,
-  Globe,
-  Target,
-  Zap,
-} from "lucide-react";
+import { ArrowRight, ChevronDown, Globe, Target, Zap } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 export default function HomePage() {
   const [isVisible, setIsVisible] = useState(false);
 
   // TODO figure out where sponsors are going
-  const sponsors = [
-    '/sponsors/nasa.png',
-    '/sponsors/converge.png',
-  ];
+  // const sponsors = ["/sponsors/nasa.png", "/sponsors/converge.png"];
 
   useEffect(() => {
     setIsVisible(true);
@@ -48,7 +38,12 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center space-x-2">
-              <Image src="/min-logo.png" alt="Project Wavefront Logo" width={30} height={30} />
+              <Image
+                src="/min-logo.png"
+                alt="Project Wavefront Logo"
+                width={30}
+                height={30}
+              />
               <span className="text-xl font-bold">Project Wavefront</span>
             </Link>
             <div className="hidden md:flex space-x-8">

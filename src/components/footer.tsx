@@ -1,7 +1,7 @@
-import { Github, Linkedin, Mail, Rocket, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -11,7 +11,12 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <Image src="/min-logo.png" alt="Project Wavefront Logo" width={30} height={30} />
+              <Image
+                src="/min-logo.png"
+                alt="Project Wavefront Logo"
+                width={30}
+                height={30}
+              />
               <span className="text-xl font-bold text-white">
                 Project Wavefront
               </span>

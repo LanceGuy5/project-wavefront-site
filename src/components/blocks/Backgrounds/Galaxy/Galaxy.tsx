@@ -1,8 +1,8 @@
 /*
-	Installed from https://reactbits.dev/ts/tailwind/
+  Installed from https://reactbits.dev/ts/tailwind/
 */
 
-import { Renderer, Program, Mesh, Color, Triangle } from "ogl";
+import { Color, Mesh, Program, Renderer, Triangle } from "ogl";
 import { useEffect, useRef } from "react";
 
 const vertexShader = `

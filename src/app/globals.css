@@ -10,6 +10,10 @@ html {
   );
 }
 
+button {
+  @apply cursor-pointer hover:scale-105 duration-200;
+}
+
 :root {
   /* Custom space-themed color palette with neon blue and purple accents */
   --background: #0a0a0f;

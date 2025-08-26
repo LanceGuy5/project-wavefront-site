@@ -11,12 +11,11 @@ import {
   Mail,
   MapPin,
   Phone,
-  Rocket,
   Send,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 export default function ContactPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,7 +31,12 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center space-x-2">
-              <Image src="/min-logo.png" alt="Project Wavefront Logo" width={30} height={30} />
+              <Image
+                src="/min-logo.png"
+                alt="Project Wavefront Logo"
+                width={30}
+                height={30}
+              />
               <span className="text-xl font-bold">Project Wavefront</span>
             </Link>
             <div className="hidden md:flex space-x-8">

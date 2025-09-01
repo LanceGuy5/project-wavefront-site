@@ -10,7 +10,12 @@ export default function Home() {
     <div className="min-h-screen text-foreground relative overflow-hidden">
       <Header />
       <div className="absolute inset-x-0 top-0 w-full h-[100vh] bg-black z-[-1]">
-        <Image src='/banner.png' alt="Project Wavefront banner" layout="fill" objectFit="cover" />
+        <Image
+          src="/banner.png"
+          alt="Project Wavefront banner"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
 
       <section className="relative z-10 pt-24 pb-16 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">

@@ -28,7 +28,10 @@ export default function Header() {
             >
               Contact Us
             </Link>
-            <Link href="/mark-i" className="hover:text-gray-400 hover:scale-105 transition duration-200 transition-colors">
+            <Link
+              href="/mark-i"
+              className="hover:text-gray-400 hover:scale-105 transition duration-200 transition-colors"
+            >
               Mark I
             </Link>
           </div>

@@ -5,6 +5,7 @@ import Galaxy from "@/components/Galaxy";
 import { ChevronDown } from "lucide-react";
 
 import Image from "next/image";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -175,6 +176,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Footer />
 
     </div >
   );

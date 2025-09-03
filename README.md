@@ -34,14 +34,15 @@ Here are instructions to run the code locally on your device. This will need to 
 1. Open VSCode, and open the folder that was created when you cloned the repository. This should be an option on the homepage of VSCode, or you can go to File > Open Folder and navigate to the folder.
 2. Open a terminal in VSCode by going to View > Terminal. This will open a terminal at the bottom of the VSCode window.
 3. In the terminal, make sure you are in the root directory of the repository. You can check this by running the `ls` command, which will list the files and folders in the current directory. You should see files like `package.json` and folders like `src`.
-4. Install the necessary dependencies by running the following command in the terminal:
+4. Run `git pull` in the terminal to make sure that you have the most updated version of the code.
+5. Install the necessary dependencies by running the following command in the terminal:
 ```bash
 npm i
 ```
-5. Finally, run the development server by running the following command in the terminal:
+6. Finally, run the development server by running the following command in the terminal:
 ```bash
 npm run dev
 ```
-6. You should see a message in the terminal that says something like "Local: http://localhost:3000". Open this URL in your web browser to see the website running locally.
+7. You should see a message in the terminal that says something like "Local: http://localhost:3000". Open this URL in your web browser to see the website running locally.
 
 Congratulations, you have officially run a development server for the website! You can now make changes to the code and see them reflected in the browser in real-time. To stop the development server, simply go back to the terminal and press `Ctrl + C`.

@@ -3,7 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Project Wavefront",
-  description: "The first student-built rotating detonation rocket engine, designed and constructed entirely by undergraduates.",
+  description:
+    "The first student-built rotating detonation rocket engine, designed and constructed entirely by undergraduates.",
 };
 
 export default function RootLayout({

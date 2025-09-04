@@ -30,7 +30,9 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold mb-1 text-base">QUICK LINKS</h3>
+            <h3 className="text-white font-semibold mb-1 text-base">
+              QUICK LINKS
+            </h3>
             <div className="flex flex-col space-y-1 text-slate-300 text-sm">
               <Link
                 href="/our-team"
@@ -66,7 +68,8 @@ export default function Footer() {
 
         <div className="flex flex-row gap-4 border-t border-slate-700/50 pt-6 items-center justify-center">
           <p className="text-slate-400 text-center text-sm">
-            © 2025 Project Wavefront. All rights reserved. Built by students, for the future.
+            © 2025 Project Wavefront. All rights reserved. Built by students,
+            for the future.
           </p>
           <span className="text-slate-400 text-xl">•</span>
           <div className="flex space-x-3">

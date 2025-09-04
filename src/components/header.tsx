@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,8 +33,9 @@ export default function Header() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 bg-background/60 backdrop-blur-sm transition-transform duration-300 ${isScrolled ? "-translate-y-full" : "translate-y-0"
-        }`}
+      className={`fixed top-0 w-full z-50 bg-background/60 backdrop-blur-sm transition-transform duration-300 ${
+        isScrolled ? "-translate-y-full" : "translate-y-0"
+      }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 text-lg">

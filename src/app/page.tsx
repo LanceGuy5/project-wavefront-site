@@ -1,11 +1,11 @@
 "use client";
 
+import Galaxy from "@/components/blocks/Galaxy";
 import Header from "@/components/header";
-import Galaxy from "@/components/Galaxy";
 import { ChevronDown } from "lucide-react";
 
-import Image from "next/image";
 import Footer from "@/components/footer";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -56,7 +56,8 @@ export default function Home() {
               MARK I
             </h1>
             <p className="text-xl md:text-2xl mb-18 max-w-lg">
-              The first RDRE to be fabricated from scratch by an independent undergraduate team.
+              The first RDRE to be fabricated from scratch by an independent
+              undergraduate team.
             </p>
           </div>
         </div>
@@ -73,27 +74,35 @@ export default function Home() {
 
             <div className="flex flex-col mt-4 space-y-2">
               <div className="flex flex-row items-center">
-                <Image src='/home/engineering-icon.png' width={70} height={70} alt={""} />
-                <h3 className='text-3xl md:text-4xl lg:text-4xl'>DESIGN</h3>
+                <Image
+                  src="/home/engineering-icon.png"
+                  width={70}
+                  height={70}
+                  alt={""}
+                />
+                <h3 className="text-3xl md:text-4xl lg:text-4xl">DESIGN</h3>
               </div>
               <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-xl">
-                To innovate and push the boundaries of
-                rocket propulsion through cutting-edge
-                research and development by an
-                independent undergraduate team.
+                To innovate and push the boundaries of rocket propulsion through
+                cutting-edge research and development by an independent
+                undergraduate team.
               </p>
             </div>
 
             <div className="flex flex-col mt-4 space-y-2">
               <div className="flex flex-row items-center">
-                <Image src='/home/treeicon.png' width={70} height={70} alt={""} />
-                <h3 className='text-3xl md:text-4xl lg:text-4xl'>INTENT</h3>
+                <Image
+                  src="/home/treeicon.png"
+                  width={70}
+                  height={70}
+                  alt={""}
+                />
+                <h3 className="text-3xl md:text-4xl lg:text-4xl">INTENT</h3>
               </div>
               <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-xl">
-                To innovate and push the boundaries of
-                rocket propulsion through cutting-edge
-                research and development by an
-                independent undergraduate team.
+                To innovate and push the boundaries of rocket propulsion through
+                cutting-edge research and development by an independent
+                undergraduate team.
               </p>
             </div>
           </div>
@@ -134,24 +143,20 @@ export default function Home() {
               SPONSORS & PARTNERS
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-xl">
-              To innovate and push the boundaries of
-              rocket propulsion through cutting-edge
-              research and development by an
-              independent undergraduate team.
+              To innovate and push the boundaries of rocket propulsion through
+              cutting-edge research and development by an independent
+              undergraduate team.
             </p>
             <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-xl">
-              To innovate and push the boundaries of
-              rocket propulsion through cutting-edge
-              research and development by an
-              independent undergraduate team.
+              To innovate and push the boundaries of rocket propulsion through
+              cutting-edge research and development by an independent
+              undergraduate team.
             </p>
             <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-xl">
-              To innovate and push the boundaries of
-              rocket propulsion through cutting-edge
-              research and development by an
-              independent undergraduate team.
+              To innovate and push the boundaries of rocket propulsion through
+              cutting-edge research and development by an independent
+              undergraduate team.
             </p>
-
           </div>
           {/* Right Column: Sponsor Logos */}
           <div className="relative h-full min-h-screen">
@@ -178,7 +183,6 @@ export default function Home() {
       </section>
 
       <Footer />
-
-    </div >
+    </div>
   );
 }

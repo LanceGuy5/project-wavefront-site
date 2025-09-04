@@ -41,4 +41,5 @@ yarn-error.log*
 next-env.d.ts
 
 # .obj files
-/public/obj
+/public/models
+/src/models

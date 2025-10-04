@@ -1,9 +1,9 @@
 name: ESLint + Prettier Style Check
 on:
   pull_request:
-    branches: [main]
+    branches: [figma-site]
   push:
-    branches: [main]
+    branches: [figma-site]
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true

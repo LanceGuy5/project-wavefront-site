@@ -36,19 +36,19 @@ export default function Footer() {
             <div className="flex flex-col space-y-1 text-slate-300 text-sm">
               <Link
                 href="/our-team"
-                className="hover:text-blue-400 transition duration-200 transition-scale tracking-wide"
+                className="w-fit hover:text-blue-400 transition duration-200 tracking-wide"
               >
                 OUR TEAM
               </Link>
               <Link
                 href="/contact"
-                className="hover:text-blue-400 transition duration-200 transition-scale"
+                className="w-fit hover:text-blue-400 transition duration-200"
               >
                 CONTACT US
               </Link>
               <Link
                 href="/mark-i"
-                className="hover:text-blue-400 transition duration-200 transition-scale"
+                className="w-fit hover:text-blue-400 transition duration-200"
               >
                 MARK I
               </Link>
@@ -59,7 +59,6 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold text-base">CONTACT</h3>
             <div className="space-y-1 text-slate-300 text-sm">
-              <p>University of Pennsylvania</p>
               <p>Philadelphia, PA 19104</p>
               <p>admin@projectwavefront.org</p>
             </div>

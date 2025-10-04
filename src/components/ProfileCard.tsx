@@ -7,6 +7,7 @@ interface ProfileCardProps {
   name: string;
   title: string;
   image: string;
+  school: string;
   major: string;
   sentence: string;
 }
@@ -15,6 +16,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   name,
   title,
   image,
+  school,
   major,
   sentence,
 }: ProfileCardProps) => {
@@ -70,18 +72,29 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
       </div>
 
       <div
-        className={`absolute bottom-6 left-6 text-white transition-all duration-700 transform ${
+        className={`absolute bottom-6 left-6 right-6 text-white transition-all duration-700 transform ${
           descriptionMode
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-4 pointer-events-none"
         }`}
       >
-        <h3 className="text-2xl md:text-3xl font-semibold tracking-tight">
+        <h3 className="text-2xl md:text-3xl font-bold leading-tight drop-shadow-sm">
           {name}
         </h3>
-        <p className="text-base md:text-lg opacity-90">{title}</p>
-        <p className="text-sm md:text-base mt-1 text-gray-200">{major}</p>
-        <p className="text-sm md:text-base mt-2 text-gray-300">{sentence}</p>
+
+        <p className="mt-1 text-lg md:text-xl font-medium text-gray-100/90">
+          {title}
+        </p>
+
+        <p className="mt-0.5 text-sm md:text-base text-gray-300/90">
+          {school} — {major}
+        </p>
+
+        <hr className="my-3 border-white/20 w-4/4" />
+
+        <p className="text-sm md:text-base italic leading-relaxed text-gray-200/80">
+          {sentence}
+        </p>
       </div>
     </div>
   );

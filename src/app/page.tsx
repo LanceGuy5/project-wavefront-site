@@ -64,7 +64,7 @@ export default function Home() {
       </section>
 
       {/** Mission Section */}
-      <section className="relative min-h-screen flex items-end">
+      <section className="relative min-h-screen flex items-end border-t border-black">
         <div className="grid grid-cols-1 md:grid-cols-2 w-full h-full">
           {/* Left Column: Text */}
           <div className="flex flex-col items-start justify-start ml-8 mt-24 pl-2 sm:pl-4 lg:pl-6">
@@ -80,7 +80,9 @@ export default function Home() {
                   height={70}
                   alt={""}
                 />
-                <h3 className="text-3xl md:text-4xl lg:text-4xl tracking-wide">DESIGN</h3>
+                <h3 className="text-3xl md:text-4xl lg:text-4xl tracking-wide">
+                  DESIGN
+                </h3>
               </div>
               <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-xl">
                 To innovate and push the boundaries of rocket propulsion through
@@ -97,7 +99,9 @@ export default function Home() {
                   height={70}
                   alt={""}
                 />
-                <h3 className="text-3xl md:text-4xl lg:text-4xl tracking-wide">INTENT</h3>
+                <h3 className="text-3xl md:text-4xl lg:text-4xl tracking-wide">
+                  INTENT
+                </h3>
               </div>
               <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-xl">
                 To innovate and push the boundaries of rocket propulsion through

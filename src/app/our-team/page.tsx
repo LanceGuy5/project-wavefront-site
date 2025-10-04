@@ -1,10 +1,10 @@
+import Squares from "@/components/blocks/Squares";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-import Squares from "@/components/blocks/Squares";
 
+import ProfileCard from "@/components/ProfileCard";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
-import ProfileCard from "@/components/ProfileCard";
 
 export default function OurTeam() {
   return (
@@ -61,89 +61,100 @@ export default function OurTeam() {
               image="/team/sam-hoffman.jpg"
               name="Sam Hoffman"
               title="Co-Founder & Propulsion Engineer"
-              major="MEAM"
-              sentence="Passionate about propulsion systems and space exploration."
+              school="University of Pennsylvania"
+              major="Mechanical Engineering & Applied Mechanics"
+              sentence="“I'm excited to learn the technical design processes behind rocket engines alongside a team that shares my passion for propulsion.”"
             />
             <ProfileCard
               image="/team/josh-dalal.jpg"
               name="Josh Dalal"
               title="Co-Founder & Propulsion Engineer"
-              major="MEAM"
-              sentence="Dedicated to advancing rocket technology and innovation."
+              school="University of Pennsylvania"
+              major="Mechanical Engineering & Applied Mechanics"
+              sentence="“I'm excited to be part of an undergrad-led team creating a uniquely hands-on environment, with the potential to drive truly original research.”"
             />
             <ProfileCard
               image="/team/fernando-deory.jpg"
               name="Fernando de Ory"
               title="Control Systems Lead"
-              major="ESE"
-              sentence="Focused on developing robust control systems for aerospace applications."
+              school="University of Pennsylvania"
+              major="Electrical & Systems Engineering"
+              sentence='""'
             />
-            
 
             <ProfileCard
               image="/team/annie-gao.jpg"
               name="Annie Gao"
               title="Propulsion Engineer"
-              major="MEAM"
-              sentence="Enthusiastic about fluid dynamics and propulsion efficiency."
+              school="University of Pennsylvania"
+              major="Mechanical Engineering & Applied Mechanics"
+              sentence="“I'm excited to learn more about propulsion and the rocket engine design process.”"
             />
             <ProfileCard
               image="/team/jason-degentile.jpg"
               name="Jason de Gentile"
               title="Propulsion Engineer"
+              school="University of Pennsylvania"
               major="Physics"
-              sentence="Committed to pushing the boundaries of rocket propulsion."
+              sentence="“I can't wait to take on the challenge of this project and contribute to such an incredible team.“"
             />
             <ProfileCard
               image="/team/ari-weiner.jpg"
               name="Ari Weiner"
               title="Mechanical Engineer III"
-              major="MEAM"
-              sentence="Specializes in structural analysis and mechanical design."
+              school="University of Pennsylvania"
+              major="Mechanical Engineering & Applied Mechanics"
+              sentence="“I can't wait to learn through experience and action, and apply my skills to this team and this project.”"
             />
 
             <ProfileCard
               image="/team/ethan-gonzalez.jpg"
               name="Ethan Gonzalez"
               title="Mechanical Engineer II"
-              major="MEAM"
-              sentence="Focused on thermal systems and materials engineering."
+              school="University of Pennsylvania"
+              major="Mechanical Engineering & Applied Mechanics"
+              sentence="“I'm looking forward to growing as an engineer through technical challenges, team collaboration, and meaningful contributions to propulsion technology.”"
             />
             <ProfileCard
               image="/team/julie-sidana.jpg"
               name="Julie Sidana"
               title="Mechanical Engineer II"
-              major="MEAM"
-              sentence="Expert in CAD modeling and simulation."
+              school="University of Pennsylvania"
+              major="Mechanical Engineering & Applied Mechanics"
+              sentence="“I'm looking forward to applying my passion for technical design in a hands-on environment alongside such an inspiring team.”"
             />
             <ProfileCard
               image="/team/kylie-autullo.jpg"
               name="Kylie Autullo"
               title="Mechanical Engineer I"
-              major="MEAM"
-              sentence="Adept at 3D printing and prototyping."
+              school="University of Pennsylvania"
+              major="Mechanical Engineering & Applied Mechanics"
+              sentence="&quot;I'm super excited to apply what I've learned in school to real-world engineering problems, all while working with a great group of people!&quot;"
             />
 
             <ProfileCard
               image="/team/chris-stuit.jpg"
               name="Christian Stuit"
               title="Mechanical Engineer I"
-              major="MEAM"
-              sentence="Interested in dynamics and control of mechanical systems."
+              school="University of Pennsylvania"
+              major="Mechanical Engineering & Applied Mechanics"
+              sentence='"I joined Project Wavefront to develop my technical skills and face problems which do not have an immediately available answer."'
             />
             <ProfileCard
               image="/team/alex-mallet.jpg"
               name="Alexander Mallet"
               title="Electrical Engineer"
-              major="ESE"
-              sentence="Passionate about circuit design and embedded systems."
+              school="University of Pennsylvania"
+              major="Electrical & Systems Engineering"
+              sentence='""'
             />
             <ProfileCard
               image="/team/andrew-rebello.jpg"
               name="Andrew Rebello"
               title="Electrical Engineer"
-              major="MEAM"
-              sentence="Focused on optimizing mechanical systems for performance and efficiency."
+              school="University of Pennsylvania"
+              major="Mechanical Engineering & Applied Mechanics"
+              sentence='""'
             />
 
             {/* <ProfileCard
@@ -164,15 +175,17 @@ export default function OurTeam() {
               image="/team/reid-glaros.jpg"
               name="Reid Glaros"
               title="Chief Marketing Officer"
-              major="PPE"
-              sentence="Expert in digital marketing strategies and brand management."
+              school="University of Pennsylvania"
+              major="Marketing & Business Economics"
+              sentence="“I'm looking forward to helping bring attention to our team's work and fostering support for such a promising initiative.”"
             />
             <ProfileCard
               image="/team/elliot-dewire.jpg"
               name="Elliot DeWire"
               title="Marketing & Communications"
-              major="PPE"
-              sentence="Skilled in crafting compelling narratives and outreach."
+              school="University of Pennsylvania"
+              major="Philosophy, Politics, & Economics"
+              sentence="“I'm looking forward to sharing stories of innovation, and building support for bold, student-led technology.”"
             />
           </div>
         </section>

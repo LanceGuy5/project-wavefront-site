@@ -17,7 +17,7 @@ export default function Footer() {
                 width={24}
                 height={24}
               />
-              <span className="text-lg font-bold text-white">
+              <span className="text-lg font-bold text-white tracking-wide">
                 PROJECT WAVEFRONT
               </span>
             </Link>
@@ -30,13 +30,13 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold mb-1 text-base">
+            <h3 className="text-white font-semibold mb-1 text-base tracking-wide">
               QUICK LINKS
             </h3>
             <div className="flex flex-col space-y-1 text-slate-300 text-sm">
               <Link
                 href="/our-team"
-                className="hover:text-blue-400 transition duration-200 transition-scale"
+                className="hover:text-blue-400 transition duration-200 transition-scale tracking-wide"
               >
                 OUR TEAM
               </Link>

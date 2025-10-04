@@ -31,13 +31,14 @@ export default function Header() {
     };
   }, [lastScrollY]);
 
+
+  // TODO : make heading like spacex
   return (
     <nav
-      className={`fixed top-0 w-full z-50 bg-background/60 backdrop-blur-sm transition-transform duration-300 ${
-        isScrolled ? "-translate-y-full" : "translate-y-0"
-      }`}
+      className={`fixed top-0 w-full z-50 bg-background/60 backdrop-blur-sm transition-transform duration-300 ${isScrolled ? "-translate-y-full" : "translate-y-0"
+        }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-12 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 text-lg">
           <Link href="/" className="flex items-center space-x-2">
             <Image
@@ -46,24 +47,24 @@ export default function Header() {
               width={40}
               height={40}
             />
-            <span className="ml-2 text-xl font-bold">PROJECT WAVEFRONT</span>
+            <span className="ml-2 text-xl font-bold tracking-wide">PROJECT WAVEFRONT</span>
           </Link>
-          <div className="hidden md:flex space-x-8">
+          <div className="text-xl hidden md:flex space-x-12">
             <Link
               href="/our-team"
-              className="hover:text-gray-400 hover:scale-105 transition duration-200 transition-scale"
+              className="hover:text-gray-400 hover:scale-105 transition duration-200 transition-scale tracking-wide"
             >
               OUR TEAM
             </Link>
             <Link
               href="/contact"
-              className="hover:text-gray-400 hover:scale-105 transition duration-200 transition-scale"
+              className="hover:text-gray-400 hover:scale-105 transition duration-200 transition-scale tracking-wide"
             >
               CONTACT US
             </Link>
             <Link
               href="/mark-i"
-              className="hover:text-gray-400 hover:scale-105 transition duration-200 transition-scale"
+              className="hover:text-gray-400 hover:scale-105 transition duration-200 transition-scale tracking-wide"
             >
               MARK I
             </Link>

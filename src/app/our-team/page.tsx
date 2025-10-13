@@ -1,4 +1,3 @@
-import Squares from "@/components/blocks/Squares";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 
@@ -41,21 +40,11 @@ export default function OurTeam() {
 
       {/** Unified Squares background for all team sections */}
       <div className="relative bg-black z-0">
-        <div className="absolute inset-0 z-[-1]">
-          <Squares
-            speed={0.0}
-            squareSize={60}
-            direction="diagonal"
-            borderColor="#5c5c5c"
-            hoverFillColor="#222"
-          />
-        </div>
-
         {/** ENGINEERS */}
-        <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-center mb-12">
-            ENGINEERING
-          </h1>
+        <h1 className="text-4xl md:text-6xl font-bold text-left ml-24">
+          ENGINEERING
+        </h1>
+        <section className="pt-12 pb-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-14 md:gap-16 lg:gap-20 xl:gap-24 justify-center max-w-[90vw]">
             <ProfileCard
               image="/team/sam-hoffman.jpg"
@@ -166,10 +155,10 @@ export default function OurTeam() {
         </section>
 
         {/** MARKETING */}
-        <section className="pb-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-center mb-12">
-            MARKETING
-          </h1>
+        <h1 className="text-4xl md:text-6xl font-bold text-left ml-24">
+          MARKETING
+        </h1>
+        <section className="pt-12 pb-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-14 md:gap-16 lg:gap-20 xl:gap-24 justify-center max-w-[90vw]">
             <ProfileCard
               image="/team/reid-glaros.jpg"

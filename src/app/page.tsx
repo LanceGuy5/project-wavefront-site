@@ -16,10 +16,11 @@ export default function Home() {
       <section className="relative z-10 pt-24 pb-16 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">
         <div className="absolute inset-x-0 top-0 w-full h-[110vh] bg-black z-[-1]">
           <Image
-            src="/home/banner.png"
+            src="/home/glimmer.gif"
             alt="Project Wavefront banner"
             layout="fill"
             objectFit="cover"
+            unoptimized
           />
         </div>
         <div className="max-w-7xl mx-auto text-center w-full">
@@ -55,7 +56,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold mb-4 tracking-wide">
               MARK I
             </h1>
-            <p className="text-xl md:text-2xl mb-18 max-w-lg text-slate-200">
+            <p className="text-xl md:text-2xl mb-18 max-w-lg text-white">
               The first RDRE to be fabricated from scratch by an independent
               undergraduate team.
             </p>
@@ -68,23 +69,17 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 w-full h-full">
           {/* Left Column: Text */}
           <div className="flex flex-col items-start justify-start ml-8 mt-24 pl-2 sm:pl-4 lg:pl-6">
-            <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold mb-4 tracking-wide">
+            <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-wide">
               OUR MISSION
             </h1>
 
             <div className="flex flex-col mt-4 space-y-2">
               <div className="flex flex-row items-center">
-                <Image
-                  src="/home/engineering-icon.png"
-                  width={70}
-                  height={70}
-                  alt={""}
-                />
-                <h3 className="text-3xl md:text-4xl lg:text-4xl tracking-wide">
+                <h3 className="text-2xl md:text-4xl lg:text-4xl tracking-wide">
                   DESIGN
                 </h3>
               </div>
-              <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-xl">
+              <p className="text-md md:text-lg md:text-xl text-slate-300 mb-12 leading-relaxed max-w-xl">
                 To innovate and push the boundaries of rocket propulsion through
                 cutting-edge research and development by an independent
                 undergraduate team.
@@ -93,17 +88,11 @@ export default function Home() {
 
             <div className="flex flex-col mt-4 space-y-2">
               <div className="flex flex-row items-center">
-                <Image
-                  src="/home/treeicon.png"
-                  width={70}
-                  height={70}
-                  alt={""}
-                />
-                <h3 className="text-3xl md:text-4xl lg:text-4xl tracking-wide">
+                <h3 className="text-2xl md:text-4xl lg:text-4xl tracking-wide">
                   INTENT
                 </h3>
               </div>
-              <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-xl">
+              <p className="text-md md:text-lg md:text-xl text-slate-300 mb-12 leading-relaxed max-w-xl">
                 To innovate and push the boundaries of rocket propulsion through
                 cutting-edge research and development by an independent
                 undergraduate team.
@@ -143,20 +132,20 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 w-full h-full">
           {/* Left Column: Text */}
           <div className="flex flex-col items-start justify-start ml-8 mt-24 pl-2 sm:pl-4 lg:pl-6">
-            <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold mb-4 tracking-wide">
+            <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-wide">
               SPONSORS & PARTNERS
             </h1>
-            <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-xl">
+            <p className="text-xl md:text-2xl lg:text-xl text-slate-300 mb-12 leading-relaxed max-w-xl">
               To innovate and push the boundaries of rocket propulsion through
               cutting-edge research and development by an independent
               undergraduate team.
             </p>
-            <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-xl">
+            <p className="text-xl md:text-2xl lg:text-xl text-slate-300 mb-12 leading-relaxed max-w-xl">
               To innovate and push the boundaries of rocket propulsion through
               cutting-edge research and development by an independent
               undergraduate team.
             </p>
-            <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-xl">
+            <p className="text-xl md:text-2xl lg:text-xl text-slate-300 mb-12 leading-relaxed max-w-xl">
               To innovate and push the boundaries of rocket propulsion through
               cutting-edge research and development by an independent
               undergraduate team.

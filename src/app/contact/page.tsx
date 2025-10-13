@@ -1,5 +1,4 @@
 import Beams from "@/components/blocks/Beams";
-import Dither from "@/components/blocks/Dither";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { Button } from "@/components/ui/button";
@@ -50,18 +49,6 @@ export default function Contact() {
       </section>
 
       <section className="min-h-screen text-foreground relative overflow-hidden py-8 px-4 sm:px-6 lg:px-8">
-        <div className="absolute inset-x-0 top-0 w-full h-[100vh] bg-black z-[-1]">
-          <Dither
-            waveColor={[0.2, 0.2, 0.2]}
-            disableAnimation={false}
-            enableMouseInteraction={false}
-            mouseRadius={0.3}
-            colorNum={4}
-            waveAmplitude={0.5}
-            waveFrequency={10}
-            waveSpeed={0.01}
-          />
-        </div>
         <div className="max-w-7xl mx-auto w-full">
           <div className="grid lg:grid-cols-2 gap-16 my-8">
             {/* Contact Form */}

@@ -30,7 +30,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
         sm:w-72 sm:h-[24rem]
         md:w-80 md:h-[26rem]
         lg:w-[22rem] lg:h-[30rem]
-        rounded-2xl overflow-hidden shadow-lg
+        rounded-xl overflow-hidden shadow-lg
         group cursor-pointer
         transition-transform duration-300
         hover:-translate-y-2 hover:shadow-2xl

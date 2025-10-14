@@ -6,6 +6,7 @@ import { ChevronDown } from "lucide-react";
 
 import Footer from "@/components/footer";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       {/** Hero Section */}
       <section className="relative z-10 pt-24 pb-16 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">
         <div className="absolute inset-x-0 top-0 w-full h-[110vh] bg-black z-[-1]">
+          {/* TODO fix GIF rotation */}
           <Image
             src="/home/glimmer.gif"
             alt="Project Wavefront banner"
@@ -29,8 +31,7 @@ export default function Home() {
               PROJECT WAVEFRONT
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-              The first student-built rotating detonation rocket engine,
-              designed and constructed entirely by undergraduates.
+              Aerospace Powered by Students, Built for the Future
             </p>
           </div>
         </div>
@@ -57,8 +58,9 @@ export default function Home() {
               MARK I
             </h1>
             <p className="text-xl md:text-2xl mb-18 max-w-lg text-white">
-              The first RDRE to be fabricated from scratch by an independent
-              undergraduate team.
+              Mark I will be the first rotating detonation rocket engine,
+              designed, fabricated, and constructed by an entirely undergraduate
+              team.
             </p>
           </div>
         </div>
@@ -68,7 +70,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-end border-t border-black">
         <div className="grid grid-cols-1 md:grid-cols-2 w-full h-full">
           {/* Left Column: Text */}
-          <div className="flex flex-col items-start justify-start ml-8 mt-24 pl-2 sm:pl-4 lg:pl-6">
+          <div className="flex flex-col items-start justify-start ml-8 mt-18 pl-2 sm:pl-4 lg:pl-6">
             <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-wide">
               OUR MISSION
             </h1>
@@ -79,10 +81,14 @@ export default function Home() {
                   DESIGN
                 </h3>
               </div>
-              <p className="text-md md:text-lg md:text-xl text-slate-300 mb-12 leading-relaxed max-w-xl">
-                To innovate and push the boundaries of rocket propulsion through
-                cutting-edge research and development by an independent
-                undergraduate team.
+              <p className="text-md md:text-lg lg:text-lg text-slate-300 mb-12 leading-relaxed max-w-xl">
+                Mark I is our proof of concept. Every component is designed and
+                fabricated from the ground up by an entirely undergraduate team.
+                Guided through collaborations with experts across the industry,
+                including NASA, Project Wavefront is planning to close to the
+                loop from ideation to delivery in less than a year. With a test
+                campaign slated for 2026, Project Wavefront is ready to redefine
+                the future of Aerospace.
               </p>
             </div>
 
@@ -92,17 +98,24 @@ export default function Home() {
                   INTENT
                 </h3>
               </div>
-              <p className="text-md md:text-lg md:text-xl text-slate-300 mb-12 leading-relaxed max-w-xl">
-                To innovate and push the boundaries of rocket propulsion through
-                cutting-edge research and development by an independent
-                undergraduate team.
+              <p className="text-md md:text-lg lg:text-lg text-slate-300 mb-12 leading-relaxed max-w-xl">
+                Project Wavefront aims to cultivate an engineering environment
+                that emphasizes technical rigor, project ownership, and a
+                culture of relentless innovation. As a non-profit research
+                group, our primary goal is to accelerate rotating detonation
+                rocket engine (RDRE) research. While significant research exists
+                surrounding RDREs, it remains highly confined to major aerospace
+                companies and well-funded laboratories. By thoroughly
+                documenting our process and publishing the principles behind our
+                system, we aim to bridge this gap and create a future where RDRE
+                research and innovation is more accessible.
               </p>
             </div>
           </div>
           {/* Right Column: Image */}
           <div className="relative h-full min-h-screen">
             <Image
-              src="/home/injector.jpg"
+              src="/home/founders.jpg"
               alt="Project Wavefront mission image"
               layout="fill"
               objectFit="cover"
@@ -136,19 +149,21 @@ export default function Home() {
               SPONSORS & PARTNERS
             </h1>
             <p className="text-xl md:text-2xl lg:text-xl text-slate-300 mb-12 leading-relaxed max-w-xl">
-              To innovate and push the boundaries of rocket propulsion through
-              cutting-edge research and development by an independent
-              undergraduate team.
+              At Project Wavefront we aim to redefine what the future of
+              propulsion looks like through student innovation. With the support
+              of partners and sponsors who are share about our vision, we can
+              take our work even farther.
             </p>
             <p className="text-xl md:text-2xl lg:text-xl text-slate-300 mb-12 leading-relaxed max-w-xl">
-              To innovate and push the boundaries of rocket propulsion through
-              cutting-edge research and development by an independent
-              undergraduate team.
-            </p>
-            <p className="text-xl md:text-2xl lg:text-xl text-slate-300 mb-12 leading-relaxed max-w-xl">
-              To innovate and push the boundaries of rocket propulsion through
-              cutting-edge research and development by an independent
-              undergraduate team.
+              We are continuously looking for additional sponsors to help
+              advance our mission. Please reach out through our{" "}
+              <Link
+                href="/contact"
+                className="text-blue-500 hover:underline transition-all duration-200"
+              >
+                Contact Us
+              </Link>{" "}
+              page.
             </p>
           </div>
           {/* Right Column: Sponsor Logos */}

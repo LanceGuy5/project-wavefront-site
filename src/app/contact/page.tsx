@@ -34,12 +34,9 @@ export default function Contact() {
           </div>
           <div className="animate-fade-slide-up">
             <h3 className="text-xl md:text-2xl lg:text-3xl text-gray-400 text-center">
-              At Project Wavefront, we&apos;re passionate about pushing the
-              boundaries of aerospace innovation and welcome collaboration with
-              researchers, partners, and talent eager to shape the future.
-              Whether you&apos;re interested in joining our team, exploring
-              partnerships, or sharing ideas, we&apos;d love to hear from you.
-              Fill out the form below or reach out directly to connect with us!
+              Project Wavefront was founded with a mission to aid innovation in
+              the world of aerospace engineering and will always be open to
+              assistance from other like-minded individuals.
             </h3>
           </div>
         </div>

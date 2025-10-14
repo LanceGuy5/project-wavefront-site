@@ -22,9 +22,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-slate-300 mb-4 max-w-md text-sm">
-              Pioneering the development of the first student-built rotating
-              detonation rocket engine. Empowering students to push the
-              boundaries of propulsion technology.
+              Aerospace Powered by Students, Built for the Future
             </p>
           </div>
 
@@ -33,7 +31,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-1 text-base tracking-wide">
               QUICK LINKS
             </h3>
-            <div className="flex flex-col space-y-1 text-slate-300 text-sm">
+            <div className="flex flex-col space-y-1 text-slate-300 text-sm mb-4">
               <Link
                 href="/our-team"
                 className="w-fit hover:text-blue-400 transition duration-200 tracking-wide"

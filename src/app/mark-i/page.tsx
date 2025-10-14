@@ -11,7 +11,7 @@ export default function Mark1RDRE() {
       <section className="relative z-10 px-4 sm:px-6 lg:px-8 min-h-screen flex flex-col items-center justify-center text-center">
         <div className="absolute inset-0 w-full h-full -z-10">
           <Image
-            src="/renders/hero-render.jpg"
+            src="/home/BackgroundWeb.jpeg"
             alt="Mark 1 RDRE Hero Render"
             fill
             priority
@@ -20,28 +20,47 @@ export default function Mark1RDRE() {
         </div>
         <div className="animate-fade-slide-up">
           <h1 className="text-5xl md:text-7xl font-bold tracking-widest uppercase">
-            Mark 1 RDRE
+            Mark I RDRE
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto mt-6 text-slate-300">
-            The first student-built Rotating Detonation Rocket Engine designed
-            for flight-grade performance
+            Mark I will be Project Wavefront&apos;s first project and the
+            world&apos;s first Rotating Detonation Rocket Engine designed,
+            built, and operated by undergraduate students. Mark I is a
+            technology demonstrator, aimed to pave the way for future, more
+            ambitious engine development programs. We aim to design, develop,
+            and test this engine in one year on an accelerated timeline.
+            Featuring active cooling which enables a 30 second burn time, Mark I
+            will be developed as two engines with shared combustion geometry;
+            one for machined production and one for additive manufacturing.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-8">
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold">12 kN</span>
-              <p>Thrust</p>
+              <span className="text-3xl font-bold">1000 N</span>
+              <p>Target Thrust</p>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold">320 s</span>
-              <p>Isp (vac)</p>
+              <span className="text-3xl font-bold">30 sec</span>
+              <p>Burn Time</p>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold">1.8 MPa</span>
-              <p>Chamber Pressure</p>
+              <span className="text-3xl font-bold">Open Cycle</span>
+              <p>Water Cooling</p>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold">LOX / Kerosene</span>
-              <p>Propellants</p>
+              <span className="text-3xl font-bold">Methagox</span>
+              <p>Fuel/Oxidizer</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="text-3xl font-bold">275+ sec</span>
+              <p>Isp</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="text-3xl font-bold">4&quot;</span>
+              <p>Chamber Diameter</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="text-3xl font-bold">0.36 kg/s</span>
+              <p>Propellant Flow Rate</p>
             </div>
           </div>
         </div>
@@ -50,7 +69,7 @@ export default function Mark1RDRE() {
       {/** Overview Section */}
       <section className="grid md:grid-cols-2 gap-12 py-24 px-8 md:px-16 items-center bg-black min-h-screen">
         <Image
-          src="/renders/overview-render.jpg"
+          src="/renders/render1BW.png"
           alt="Overview Render"
           width={600}
           height={500}
@@ -68,17 +87,17 @@ export default function Mark1RDRE() {
       </section>
 
       {/** Key Specs Section */}
-      <section className="grid md:grid-cols-2 gap-12 py-24 px-8 md:px-16 items-center bg-neutral-900 min-h-screen">
+      <section className="grid md:grid-cols-2 gap-18 py-24 px-8 md:px-16 items-center bg-neutral-900 min-h-screen">
         <div>
           <h2 className="text-4xl font-bold mb-8">Key Specs</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
             {[
-              { label: "Thrust", value: "12 kN" },
-              { label: "Isp (vacuum)", value: "320 s" },
-              { label: "Engine Mass", value: "180 kg" },
-              { label: "Chamber Pressure", value: "1.8 MPa" },
-              { label: "Propellants", value: "LOX / Kerosene" },
-              { label: "Chamber", value: "Additive-Manufactured" },
+              { label: "Target Thrust", value: "1000 N" },
+              { label: "Isp (vacuum)", value: "275+ s" },
+              { label: "Burn Time", value: "30 sec" },
+              { label: "Propellant FR", value: "0.36 kg/s" },
+              { label: "Chamber Diameter", value: '4"' },
+              { label: "AM Ver.", value: "GRCop-42" },
             ].map((spec, i) => (
               <div
                 key={i}
@@ -91,9 +110,9 @@ export default function Mark1RDRE() {
           </div>
         </div>
         <Image
-          src="/renders/specs-render.jpg"
+          src="/renders/MockAnimationRender.png"
           alt="Key Specs Render"
-          width={600}
+          width={500}
           height={500}
           className="rounded-2xl shadow-lg"
         />
@@ -102,7 +121,7 @@ export default function Mark1RDRE() {
       {/** Architecture Section */}
       <section className="grid md:grid-cols-2 gap-12 py-24 px-8 md:px-16 items-center bg-black min-h-screen">
         <Image
-          src="/renders/architecture-render.jpg"
+          src="/renders/renderBW2.png"
           alt="Architecture Render"
           width={600}
           height={500}
@@ -112,10 +131,10 @@ export default function Mark1RDRE() {
           <h2 className="text-4xl font-bold mb-4">Architecture</h2>
           <p className="text-lg text-slate-300 leading-relaxed">
             Featuring an annular combustion chamber with integrated cooling
-            channels, the Mark 1’s architecture optimizes detonation propagation
-            and thermal resilience. Subsystems include the injector assembly,
-            detonation chamber, nozzle extension, and advanced fuel-delivery
-            manifolds.
+            channels, the Mark 1&apos;s architecture optimizes detonation
+            propagation and thermal resilience. Subsystems include the injector
+            assembly, detonation chamber, nozzle extension, and advanced
+            fuel-delivery manifolds.
           </p>
         </div>
       </section>
@@ -132,7 +151,7 @@ export default function Mark1RDRE() {
           </p>
         </div>
         <Image
-          src="/renders/detonation-render.jpg"
+          src="/renders/renderBW3.png"
           alt="Detonation Chamber Render"
           width={600}
           height={500}
@@ -143,7 +162,7 @@ export default function Mark1RDRE() {
       {/** Testing Section */}
       <section className="grid md:grid-cols-2 gap-12 py-24 px-8 md:px-16 items-center bg-black min-h-screen">
         <Image
-          src="/renders/testing-render.jpg"
+          src="/renders/renderBW4.png"
           alt="Testing Render"
           width={600}
           height={500}
@@ -152,8 +171,8 @@ export default function Mark1RDRE() {
         <div>
           <h2 className="text-4xl font-bold mb-4">Testing & Roadmap</h2>
           <p className="text-lg text-slate-300 leading-relaxed">
-            Mark 1 will undergo hot-fire testing on Wavefront’s vertical test
-            stand. Future iterations focus on full-duration burn stability,
+            Mark 1 will undergo hot-fire testing on Wavefront&apos;s vertical
+            test stand. Future iterations focus on full-duration burn stability,
             gimbal integration, and eventual flight-qualified units for orbital
             launch vehicle prototypes.
           </p>

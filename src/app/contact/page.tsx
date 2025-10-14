@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { ChevronDown, Mail, MapPin, Phone, Send } from "lucide-react";
+import { ChevronDown, Mail, MapPin, Send } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -47,151 +47,130 @@ export default function Contact() {
 
       <section className="min-h-screen text-foreground relative overflow-hidden py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto w-full">
-          <div className="grid lg:grid-cols-2 gap-16 my-8">
-            {/* Contact Form */}
-            <div>
-              <Card className="bg-black border border-none shadow-none">
-                <CardTitle className="text-4xl font-bold text-gray-200 px-10">
+          <Card className="bg-black border border-none shadow-none my-8">
+            <div className="grid lg:grid-cols-2 gap-16 p-10 relative">
+              {/* Contact Form */}
+              <div>
+                <CardTitle className="text-4xl font-bold text-gray-200 mb-8">
                   MESSAGE US
                 </CardTitle>
-                <CardContent className="px-10">
-                  <form className="space-y-8">
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div>
-                        <label className="block text-sm font-medium text-slate-300 mb-2">
-                          FIRST NAME *
-                        </label>
-                        <Input
-                          required
-                          placeholder="John"
-                          className="focus-visible:ring-gray-400 focus-visible:ring-1 bg-slate-800/60 border border-none text-slate-200 placeholder-slate-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                        />
-                      </div>
-                      <div>
-                        <label className="block text-sm font-medium text-slate-300 mb-2">
-                          LAST NAME *
-                        </label>
-                        <Input
-                          required
-                          placeholder="Doe"
-                          className="focus-visible:ring-gray-400 focus-visible:ring-1 bg-slate-800/60 border border-none text-slate-200 placeholder-slate-400"
-                        />
-                      </div>
-                    </div>
+                <form className="space-y-8">
+                  <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <label className="focus-visible:ring-gray-400 focus-visible:ring-1 block text-sm font-medium text-slate-300 mb-2">
-                        EMAIL *
+                      <label className="block text-sm font-medium text-slate-300 mb-2">
+                        FIRST NAME *
                       </label>
                       <Input
                         required
-                        type="email"
-                        placeholder="john@example.com"
-                        className="focus-visible:ring-gray-400 focus-visible:ring-1 bg-slate-800/60 border border-none text-slate-200 placeholder-slate-400"
+                        placeholder="John"
+                        className="focus-visible:ring-gray-400 focus-visible:ring-1 bg-slate-800/60 border border-none text-slate-200 placeholder-slate-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-slate-300 mb-2">
-                        ORGANIZATION *
+                        LAST NAME *
                       </label>
                       <Input
                         required
-                        placeholder="Your company or university"
+                        placeholder="Doe"
                         className="focus-visible:ring-gray-400 focus-visible:ring-1 bg-slate-800/60 border border-none text-slate-200 placeholder-slate-400"
                       />
                     </div>
-                    <div>
-                      <label className="block text-sm font-medium text-slate-300 mb-2">
-                        SUBJECT *
-                      </label>
-                      <Input
-                        required
-                        placeholder="Partnership Opportunity"
-                        className="focus-visible:ring-gray-400 focus-visible:ring-1 bg-slate-800/60 border border-none text-slate-200 placeholder-slate-400"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-slate-300 mb-2">
-                        MESSAGE *
-                      </label>
-                      <Textarea
-                        required
-                        placeholder="Tell us about your interest in Project Wavefront..."
-                        rows={6}
-                        className="focus-visible:ring-gray-400 focus-visible:ring-1 bg-slate-800/60 border border-none text-slate-200 placeholder-slate-400 resize-none"
-                      />
-                    </div>
-                    <Button
-                      type="submit"
-                      size="lg"
-                      className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
-                    >
-                      Send Message <Send className="ml-2 h-5 w-5" />
-                    </Button>
-                  </form>
-                </CardContent>
-              </Card>
-            </div>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-slate-300 mb-2">
+                      EMAIL *
+                    </label>
+                    <Input
+                      required
+                      type="email"
+                      placeholder="john@example.com"
+                      className="focus-visible:ring-gray-400 focus-visible:ring-1 bg-slate-800/60 border border-none text-slate-200 placeholder-slate-400"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-slate-300 mb-2">
+                      ORGANIZATION *
+                    </label>
+                    <Input
+                      required
+                      placeholder="Your company or university"
+                      className="focus-visible:ring-gray-400 focus-visible:ring-1 bg-slate-800/60 border border-none text-slate-200 placeholder-slate-400"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-slate-300 mb-2">
+                      SUBJECT *
+                    </label>
+                    <Input
+                      required
+                      placeholder="Partnership Opportunity"
+                      className="focus-visible:ring-gray-400 focus-visible:ring-1 bg-slate-800/60 border border-none text-slate-200 placeholder-slate-400"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-slate-300 mb-2">
+                      MESSAGE *
+                    </label>
+                    <Textarea
+                      required
+                      placeholder="Tell us about your interest in Project Wavefront..."
+                      rows={6}
+                      className="focus-visible:ring-gray-400 focus-visible:ring-1 bg-slate-800/60 border border-none text-slate-200 placeholder-slate-400 resize-none"
+                    />
+                  </div>
+                  <Button
+                    type="submit"
+                    size="lg"
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
+                  >
+                    Send Message <Send className="ml-2 h-5 w-5" />
+                  </Button>
+                </form>
+              </div>
 
-            {/* Contact Information */}
-            <div>
-              <h2 className="text-4xl font-bold mb-8 text-gray-300">
-                CONTACT INFORMATION
-              </h2>
-              <div className="space-y-8">
-                {" "}
-                {/* Increased spacing between cards */}
-                <Card className="bg-gradient-to-br from-purple-900/40 to-cyan-900/40 border border-purple-500/40">
-                  {" "}
-                  {/* Increased opacity */}
-                  <CardHeader>
-                    <div className="flex items-center space-x-2">
-                      <Mail className="h-6 w-6 text-purple-400" />
-                      <CardTitle className="text-purple-400">Email</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-slate-300">
-                      contact@projectwavefront.org
-                    </p>
-                    <p className="text-slate-400 text-sm mt-1">
-                      We typically respond within 24 hours
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card className="bg-gradient-to-br from-cyan-900/40 to-blue-900/40 border border-cyan-500/40">
-                  {" "}
-                  {/* Increased opacity */}
-                  <CardHeader>
-                    <div className="flex items-center space-x-2">
-                      <MapPin className="h-6 w-6 text-cyan-400" />
-                      <CardTitle className="text-cyan-400">Location</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-slate-300">MIT Aerospace Lab</p>
-                    <p className="text-slate-300">77 Massachusetts Avenue</p>
-                    <p className="text-slate-300">Cambridge, MA 02139</p>
-                  </CardContent>
-                </Card>
-                <Card className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 border border-blue-500/40">
-                  {" "}
-                  {/* Increased opacity */}
-                  <CardHeader>
-                    <div className="flex items-center space-x-2">
-                      <Phone className="h-6 w-6 text-blue-400" />
-                      <CardTitle className="text-blue-400">Phone</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-slate-300">+1 (617) 555-0123</p>
-                    <p className="text-slate-400 text-sm mt-1">
-                      Available Monday-Friday, 9 AM - 5 PM EST
-                    </p>
-                  </CardContent>
-                </Card>
+              {/* Dividing Line */}
+              <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-slate-600"></div>
+
+              {/* Contact Information */}
+              <div>
+                <h2 className="text-4xl font-bold mb-8 text-gray-300">
+                  CONTACT INFORMATION
+                </h2>
+                <div className="space-y-8">
+                  <Card className="bg-gradient-to-br from-purple-900/40 to-cyan-900/40 border border-purple-500/40">
+                    <CardHeader>
+                      <div className="flex items-center space-x-2">
+                        <Mail className="h-6 w-6 text-purple-400" />
+                        <CardTitle className="text-purple-400">Email</CardTitle>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-slate-300">
+                        admin@projectwavefront.org
+                      </p>
+                      <p className="text-slate-400 text-sm mt-1">
+                        We typically respond within 24 hours
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card className="bg-gradient-to-br from-cyan-900/40 to-blue-900/40 border border-cyan-500/40">
+                    <CardHeader>
+                      <div className="flex items-center space-x-2">
+                        <MapPin className="h-6 w-6 text-cyan-400" />
+                        <CardTitle className="text-cyan-400">
+                          Location
+                        </CardTitle>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-slate-300">Philadelphia, PA 19104</p>
+                    </CardContent>
+                  </Card>
+                </div>
               </div>
             </div>
-          </div>
+          </Card>
         </div>
       </section>
 

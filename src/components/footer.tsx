@@ -1,11 +1,11 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Linkedin, Mail, Twitter } from "lucide-react";
 
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative z-10 bg-slate-900/50 backdrop-blur-sm border-t border-slate-700/50 mt-auto">
+    <footer className="relative z-10 bg-black backdrop-blur-sm border-t border-gray-700/50 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="grid md:grid-cols-4 gap-6 mb-2">
           {/* Logo and Description */}
@@ -22,7 +22,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-slate-300 mb-4 max-w-md text-sm">
-              Aerospace Powered by Students, Built for the Future
+              A Collaborative Undergraduate Team Advancing Innovation in
+              Propulsion Technology
             </p>
           </div>
 
@@ -63,21 +64,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-row gap-4 border-t border-slate-700/50 pt-6 items-center justify-center">
+        <div className="flex flex-row gap-4 border-t border-gray-700/50 pt-6 items-center justify-center">
           <p className="text-slate-400 text-center text-sm">
             © 2025 Project Wavefront. All rights reserved. Built by students,
             for the future.
           </p>
           <span className="text-slate-400 text-xl">•</span>
           <div className="flex space-x-3">
-            <a
-              href="https://github.com/LanceGuy5/project-wavefront-site"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-slate-400 hover:text-blue-400 transition-colors hover:scale-105 transition duration-200 transition-scale"
-            >
-              <Github className="h-5 w-5" />
-            </a>
             <a
               href="https://www.linkedin.com/company/project-wavefront/posts/?feedView=all"
               target="_blank"

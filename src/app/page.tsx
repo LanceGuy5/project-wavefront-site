@@ -15,23 +15,27 @@ export default function Home() {
 
       {/** Hero Section */}
       <section className="relative z-10 pt-24 pb-16 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">
-        <div className="absolute inset-x-0 top-0 w-full h-[110vh] bg-black z-[-1]">
-          {/* TODO fix GIF rotation */}
-          <Image
-            src="/home/glimmer.gif"
-            alt="Project Wavefront banner"
-            layout="fill"
-            objectFit="cover"
-            unoptimized
-          />
+        <div className="absolute inset-0 bg-black z-[-1] overflow-hidden flex items-center justify-center">
+          <div className="relative w-[150%] h-[150%] opacity-70">
+            <Image
+              src="/home/glimmer_temp.gif"
+              alt="Project Wavefront banner"
+              fill
+              style={{ objectFit: "cover" }}
+              unoptimized
+              className="scale-70"
+            />
+          </div>
         </div>
+
         <div className="max-w-7xl mx-auto text-center w-full">
           <div className="animate-fade-slide-up">
             <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-6 tracking-wide">
               PROJECT WAVEFRONT
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-              Aerospace Powered by Students, Built for the Future
+              A Collaborative Undergraduate Team Advancing Innovation in
+              Propulsion Technology
             </p>
           </div>
         </div>
@@ -115,7 +119,7 @@ export default function Home() {
           {/* Right Column: Image */}
           <div className="relative h-full min-h-screen">
             <Image
-              src="/home/founders.jpg"
+              src="/home/founders.jpeg"
               alt="Project Wavefront mission image"
               layout="fill"
               objectFit="cover"
@@ -157,9 +161,10 @@ export default function Home() {
             <p className="text-xl md:text-2xl lg:text-xl text-slate-300 mb-12 leading-relaxed max-w-xl">
               We are continuously looking for additional sponsors to help
               advance our mission. Please reach out through our{" "}
+              {/* TODO hover bold on top of underline */}
               <Link
                 href="/contact"
-                className="text-blue-500 hover:underline transition-all duration-200"
+                className="font-bold hover:text-strong transition-all duration-200 underline"
               >
                 Contact Us
               </Link>{" "}
@@ -168,23 +173,35 @@ export default function Home() {
           </div>
           {/* Right Column: Sponsor Logos */}
           <div className="relative h-full min-h-screen">
-            <div className="flex flex-col items-center justify-center h-full w-full p-8 space-y-8">
-              <Image
-                src="/home/sponsors/converge.png"
-                alt="Project Wavefront mission image"
-                width={250}
-                height={250}
-                objectFit="cover"
-                className=""
-              />
-              <Image
-                src="/home/sponsors/nasa.png"
-                alt="Project Wavefront mission image"
-                width={330}
-                height={330}
-                objectFit="cover"
-                className=""
-              />
+            <div className="flex flex-col items-center justify-center h-full w-full p-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+                <Image
+                  src="/home/sponsors/converge.png"
+                  alt="Converge sponsor logo"
+                  width={250}
+                  height={250}
+                  objectFit="cover"
+                  className="w-full h-auto"
+                />
+                <Image
+                  src="/home/sponsors/nasa.png"
+                  alt="NASA sponsor logo"
+                  width={330}
+                  height={330}
+                  objectFit="cover"
+                  className="w-full h-auto"
+                />
+                <Image
+                  src="/home/sponsors/ansys.png"
+                  alt="Ansys sponsor logo"
+                  width={250}
+                  height={250}
+                  objectFit="cover"
+                  className="w-full h-auto"
+                />
+                {/* Empty div to occupy the fourth cell in the 2x2 grid */}
+                <div className="hidden md:block"></div>
+              </div>
             </div>
           </div>
         </div>

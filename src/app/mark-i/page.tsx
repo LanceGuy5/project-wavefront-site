@@ -1,3 +1,4 @@
+import Beams from "@/components/blocks/Beams";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Image from "next/image";
@@ -9,34 +10,30 @@ export default function Mark1RDRE() {
 
       {/** Hero Section */}
       <section className="relative z-10 px-4 sm:px-6 lg:px-8 min-h-screen flex flex-col items-center justify-center text-center">
-        <div className="absolute inset-0 w-full h-full -z-10">
-          <Image
-            src="/home/BackgroundWeb.jpeg"
-            alt="Mark 1 RDRE Hero Render"
-            fill
-            priority
-            className="object-cover opacity-70"
+        <div className="absolute inset-x-0 top-0 w-full h-[100vh] bg-black z-[-1]">
+          <Beams
+            beamWidth={1}
+            beamHeight={15}
+            beamNumber={15}
+            lightColor="#bfbfbf"
+            speed={3}
+            noiseIntensity={1.75}
+            scale={0.2}
+            rotation={30}
           />
         </div>
         <div className="animate-fade-slide-up">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-widest uppercase">
-            Mark I RDRE
-          </h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto mt-6 text-slate-300">
-            Mark I will be Project Wavefront&apos;s first project and the
-            world&apos;s first Rotating Detonation Rocket Engine designed,
-            built, and operated by undergraduate students. Mark I is a
-            technology demonstrator, aimed to pave the way for future, more
-            ambitious engine development programs. We aim to design, develop,
-            and test this engine in one year on an accelerated timeline.
-            Featuring active cooling which enables a 30 second burn time, Mark I
-            will be developed as two engines with shared combustion geometry;
-            one for machined production and one for additive manufacturing.
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold">MARK I</h1>
+          <p className="mx-auto text-xl md:text-2xl text-slate-300 max-w-4xl leading-relaxed">
+            Mark I is Project Wavefront&apos;s inaugural design and the
+            world&apos;s first rotating detonation rocket engine designed,
+            built, and operated by undergraduates. As a technology demonstrator,
+            it aims to enable future engine development.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-8">
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold">1000 N</span>
-              <p>Target Thrust</p>
+              <span className="text-3xl font-bold">2.1kN</span>
+              <p>Thrust</p>
             </div>
             <div className="flex flex-col items-center">
               <span className="text-3xl font-bold">30 sec</span>
@@ -51,16 +48,20 @@ export default function Mark1RDRE() {
               <p>Fuel/Oxidizer</p>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold">275+ sec</span>
+              <span className="text-3xl font-bold">263 sec</span>
               <p>Isp</p>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold">4&quot;</span>
+              <span className="text-3xl font-bold">2.56in</span>
               <p>Chamber Diameter</p>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold">0.36 kg/s</span>
+              <span className="text-3xl font-bold">0.816kg/s</span>
               <p>Propellant Flow Rate</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="text-3xl font-bold">13kHz</span>
+              <p>Frequency</p>
             </div>
           </div>
         </div>
@@ -76,7 +77,7 @@ export default function Mark1RDRE() {
           className="rounded-2xl shadow-lg"
         />
         <div>
-          <h2 className="text-4xl font-bold mb-4">Overview</h2>
+          <h2 className="text-4xl font-bold mb-4">OVERVIEW</h2>
           <p className="text-lg text-slate-300 leading-relaxed">
             The Mark 1 RDRE is a cutting-edge rotating detonation rocket engine
             engineered by Project Wavefront. Designed to maximize efficiency and
@@ -89,15 +90,15 @@ export default function Mark1RDRE() {
       {/** Key Specs Section */}
       <section className="grid md:grid-cols-2 gap-18 py-24 px-8 md:px-16 items-center bg-neutral-900 min-h-screen">
         <div>
-          <h2 className="text-4xl font-bold mb-8">Key Specs</h2>
+          <h2 className="text-4xl font-bold mb-8">KEY SPECS</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
             {[
-              { label: "Target Thrust", value: "1000 N" },
-              { label: "Isp (vacuum)", value: "275+ s" },
+              { label: "Target Thrust", value: "2.1kN" },
+              { label: "Isp (vacuum)", value: "263 sec" },
               { label: "Burn Time", value: "30 sec" },
-              { label: "Propellant FR", value: "0.36 kg/s" },
-              { label: "Chamber Diameter", value: '4"' },
-              { label: "AM Ver.", value: "GRCop-42" },
+              { label: "Propellant FR", value: "0.816kg/s" },
+              { label: "Chamber Diameter", value: "2.56in" },
+              { label: "Frequency", value: "13kHz" },
             ].map((spec, i) => (
               <div
                 key={i}
@@ -128,7 +129,7 @@ export default function Mark1RDRE() {
           className="rounded-2xl shadow-lg"
         />
         <div>
-          <h2 className="text-4xl font-bold mb-4">Architecture</h2>
+          <h2 className="text-4xl font-bold mb-4">ARCHITECTURE</h2>
           <p className="text-lg text-slate-300 leading-relaxed">
             Featuring an annular combustion chamber with integrated cooling
             channels, the Mark 1&apos;s architecture optimizes detonation
@@ -142,7 +143,7 @@ export default function Mark1RDRE() {
       {/** Detonation Innovation Section */}
       <section className="grid md:grid-cols-2 gap-12 py-24 px-8 md:px-16 items-center bg-neutral-900 min-h-screen">
         <div>
-          <h2 className="text-4xl font-bold mb-4">Detonation Innovation</h2>
+          <h2 className="text-4xl font-bold mb-4">DETONATION INNOVATION</h2>
           <p className="text-lg text-slate-300 leading-relaxed">
             The RDRE leverages continuous detonation waves to improve
             thermodynamic efficiency beyond conventional deflagration-based
@@ -169,7 +170,7 @@ export default function Mark1RDRE() {
           className="rounded-2xl shadow-lg"
         />
         <div>
-          <h2 className="text-4xl font-bold mb-4">Testing & Roadmap</h2>
+          <h2 className="text-4xl font-bold mb-4">TESTING & ROADMAP</h2>
           <p className="text-lg text-slate-300 leading-relaxed">
             Mark 1 will undergo hot-fire testing on Wavefront&apos;s vertical
             test stand. Future iterations focus on full-duration burn stability,

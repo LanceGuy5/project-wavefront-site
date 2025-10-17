@@ -1,5 +1,6 @@
 "use client";
 
+import { Link } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -10,6 +11,7 @@ interface ProfileCardProps {
   school: string;
   major: string;
   sentence: string;
+  url?: string;
 }
 
 const ProfileCard: React.FC<ProfileCardProps> = ({
@@ -19,6 +21,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   school,
   major,
   sentence,
+  url,
 }: ProfileCardProps) => {
   const [descriptionMode, setDescriptionMode] = React.useState(false);
 
@@ -78,8 +81,19 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
             : "opacity-0 translate-y-4 pointer-events-none"
         }`}
       >
-        <h3 className="text-2xl md:text-3xl font-bold leading-tight drop-shadow-sm">
-          {name}
+        <h3 className="flex flex-row gap-2 items-center text-2xl md:text-3xl font-bold leading-tight drop-shadow-sm">
+          {name}{" "}
+          {url && (
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline text-base md:text-lg font-normal ml-2"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Link className="inline-block h-5 w-5 hover:scale-110 hover:text-blue-300 transition-transform transition-colors duration-200" />
+            </a>
+          )}
         </h3>
 
         <p className="mt-1 text-lg md:text-xl font-medium text-gray-100/90">

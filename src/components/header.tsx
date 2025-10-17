@@ -32,7 +32,7 @@ export default function Header() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 bg-background/60 backdrop-blur-sm transition-transform duration-300 ${
+      className={`fixed top-0 w-full z-50 bg-background/60 backdrop-blur-sm transition-transform duration-300 select-none ${
         isScrolled ? "-translate-y-full" : "translate-y-0"
       }`}
     >

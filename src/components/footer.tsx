@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative z-10 bg-black backdrop-blur-sm border-t border-gray-700/50 mt-auto">
+    <footer className="relative z-10 bg-black backdrop-blur-sm border-t border-gray-700/50 mt-auto select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="grid md:grid-cols-4 gap-6 mb-2">
           {/* Logo and Description */}
@@ -59,7 +59,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold text-base">CONTACT</h3>
             <div className="space-y-1 text-slate-300 text-sm">
               <p>Philadelphia, PA 19104</p>
-              <p>admin@projectwavefront.org</p>
+              <p>contact@projectwavefront.org</p>
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@ export default function Footer() {
               <Twitter className="h-5 w-5" />
             </a>
             <a
-              href="mailto:admin@projectwavefront.org"
+              href="mailto:contact@projectwavefront.org"
               className="text-slate-400 hover:text-blue-400 transition-colors hover:scale-105 transition duration-200 transition-scale"
             >
               <Mail className="h-5 w-5" />

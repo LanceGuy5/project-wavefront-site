@@ -30,7 +30,7 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const mailto = `mailto:admin@projectwavefront.org?subject=${encodeURIComponent(
+    const mailto = `mailto:contact@projectwavefront.org?subject=${encodeURIComponent(
       form.subject || "Contact from Project Wavefront",
     )}&body=${encodeURIComponent(
       `Name: ${form.firstName} ${form.lastName}
@@ -202,7 +202,7 @@ ${form.message}`,
                     </CardHeader>
                     <CardContent>
                       <p className="text-gray-200">
-                        admin@projectwavefront.org
+                        contact@projectwavefront.org
                       </p>
                       <p className="text-gray-500 text-sm mt-1">
                         We typically respond within 24 hours

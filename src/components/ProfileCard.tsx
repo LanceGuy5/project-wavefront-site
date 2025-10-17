@@ -37,6 +37,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
         group cursor-pointer
         transition-transform duration-300
         hover:-translate-y-2 hover:shadow-2xl
+        select-none
       "
       onClick={() => setDescriptionMode(!descriptionMode)}
     >

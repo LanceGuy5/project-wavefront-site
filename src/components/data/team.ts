@@ -36,7 +36,7 @@ export const ENGINEERS: TeamMember[] = [
     school: "University of Pennsylvania",
     major: "Electrical & Systems Engineering",
     sentence:
-      "&quot;This project is new, it's hard, and I actually get to help build it. Plus, what's not exciting about a rocket engine?&quot;",
+      "”This project is new, it's hard, and I actually get to help build it. Plus, what's not exciting about a rocket engine?”",
     url: "https://www.linkedin.com/in/fernandodeory/",
   },
   {
@@ -96,7 +96,7 @@ export const ENGINEERS: TeamMember[] = [
     school: "University of Pennsylvania",
     major: "Mechanical Engineering & Applied Mechanics",
     sentence:
-      "&quot;I'm super excited to apply what I've learned in school to real-world engineering problems, all while working with a great group of people!&quot;",
+      "”I'm super excited to apply what I've learned in school to real-world engineering problems, all while working with a great group of people!”",
     url: "https://habitual-heron-223.notion.site/Kylie-Autullo-Engineering-Portfolio-20c379826e6b80f4908afc4ae8976ae6",
   },
   {
@@ -106,7 +106,7 @@ export const ENGINEERS: TeamMember[] = [
     school: "University of Pennsylvania",
     major: "Mechanical Engineering & Applied Mechanics",
     sentence:
-      "&quot;I'm excited to develop my technical skills, working as a team to solve interesting problems which may not have an immediately available answer!&quot;",
+      "”I'm excited to develop my technical skills, working as a team to solve interesting problems which may not have an immediately available answer!”",
     url: "https://www.linkedin.com/in/christian-stuit-935143286/",
   },
   {
@@ -116,7 +116,7 @@ export const ENGINEERS: TeamMember[] = [
     school: "University of Pennsylvania",
     major: "Electrical & Systems Engineering",
     sentence:
-      "&quot;I'm excited to explore advanced propulsion research while expanding my technical skills through hands-on contribution.&quot;",
+      "”I'm excited to explore advanced propulsion research while expanding my technical skills through hands-on contribution.”",
     url: "https://www.linkedin.com/in/alexandermallet529/",
   },
   {
@@ -125,8 +125,7 @@ export const ENGINEERS: TeamMember[] = [
     title: "Electrical Engineer",
     school: "University of Pennsylvania",
     major: "Mechanical Engineering & Applied Mechanics",
-    sentence:
-      "&quot;What could be cooler than creating a conduit to the cosmos?&quot;",
+    sentence: "”What could be cooler than creating a conduit to the cosmos?”",
     url: "https://www.linkedin.com/in/andrew-r-844926380/",
   },
   // {
@@ -135,7 +134,7 @@ export const ENGINEERS: TeamMember[] = [
   //               title:"Electrical Engineer",
   //               school:"University of Pennsylvania",
   //               major:"Electrical & Systems Engineering",
-  //               sentence:"&quot;Wavefront is a chance to work directly with cutting-edge propulsion tech alongside a driven team of engineers pushing the limits of what's possible.&quot;",
+  //               sentence:'"Wavefront is a chance to work directly with cutting-edge propulsion tech alongside a driven team of engineers pushing the limits of what's possible."',
   //               url:"https://www.linkedin.com/in/devan-malik"
   // }
 ];

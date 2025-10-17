@@ -46,8 +46,8 @@ export default function OurTeam() {
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-14 md:gap-16 lg:gap-20 xl:gap-24 justify-center max-w-[90vw]">
             {ENGINEERS.map((member) => (
-            <ProfileCard key={member.name} {...member} />
-          ))}
+              <ProfileCard key={member.name} {...member} />
+            ))}
           </div>
           <div className="flex justify-center italic text-slate-400 mt-12 text-lg">
             Not Displayed: Devan Malik (Electrical)
@@ -61,8 +61,8 @@ export default function OurTeam() {
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-14 md:gap-16 lg:gap-20 xl:gap-24 justify-center max-w-[90vw]">
             {MARKETING.map((member) => (
-            <ProfileCard key={member.name} {...member} />
-          ))}
+              <ProfileCard key={member.name} {...member} />
+            ))}
           </div>
         </section>
       </div>

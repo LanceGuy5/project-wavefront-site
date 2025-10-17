@@ -70,10 +70,10 @@ export default function Mark1RDRE() {
       {/** Overview Section */}
       <section className="grid md:grid-cols-2 gap-12 py-24 px-8 md:px-16 items-center bg-black min-h-screen">
         <Image
-          src="/renders/render1BW.png"
+          src="/renders/r1.png"
           alt="Overview Render"
-          width={600}
-          height={500}
+          width={800}
+          height={700}
           className="rounded-2xl shadow-lg"
         />
         <div>
@@ -111,10 +111,10 @@ export default function Mark1RDRE() {
           </div>
         </div>
         <Image
-          src="/renders/MockAnimationRender.png"
+          src="/renders/r2.png"
           alt="Key Specs Render"
-          width={500}
-          height={500}
+          width={800}
+          height={700}
           className="rounded-2xl shadow-lg"
         />
       </section>
@@ -122,10 +122,10 @@ export default function Mark1RDRE() {
       {/** Architecture Section */}
       <section className="grid md:grid-cols-2 gap-12 py-24 px-8 md:px-16 items-center bg-black min-h-screen">
         <Image
-          src="/renders/renderBW2.png"
+          src="/renders/r4.png"
           alt="Architecture Render"
-          width={600}
-          height={500}
+          width={800}
+          height={700}
           className="rounded-2xl shadow-lg"
         />
         <div>
@@ -152,10 +152,10 @@ export default function Mark1RDRE() {
           </p>
         </div>
         <Image
-          src="/renders/renderBW3.png"
+          src="/renders/r3.png"
           alt="Detonation Chamber Render"
-          width={600}
-          height={500}
+          width={700}
+          height={600}
           className="rounded-2xl shadow-lg"
         />
       </section>

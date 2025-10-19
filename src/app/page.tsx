@@ -71,7 +71,7 @@ export default function Home() {
       </section>
 
       {/** Mission Section */}
-      <section className="relative min-h-screen flex items-end border-t border-black">
+      <section className="relative min-h-screen flex items-end">
         <div className="grid grid-cols-1 md:grid-cols-2 w-full h-full">
           {/* Left Column: Text */}
           <div className="flex flex-col items-start justify-start ml-8 mt-18 pl-2 sm:pl-4 lg:pl-6">
@@ -119,7 +119,7 @@ export default function Home() {
           {/* Right Column: Image */}
           <div className="relative h-full min-h-screen">
             <Image
-              src="/home/founders.jpeg"
+              src="/home/team.jpeg"
               alt="Project Wavefront mission image"
               layout="fill"
               objectFit="cover"

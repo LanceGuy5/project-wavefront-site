@@ -130,8 +130,8 @@ export default function Home() {
       </section>
 
       {/** Sponsors Section */}
-      <section className="relative min-h-screen flex items-end">
-        <div className="absolute inset-x-0 top-0 w-full h-[100vh] bg-black z-[-1] min-h-screen">
+      <section className="relative flex items-end my-16">
+        <div className="absolute inset-x-0 top-0 w-full h-[100vh] bg-black z-[-1]">
           <Galaxy
             mouseRepulsion={false}
             mouseInteraction={false}
@@ -172,35 +172,48 @@ export default function Home() {
             </p>
           </div>
           {/* Right Column: Sponsor Logos */}
-          <div className="relative h-full min-h-screen">
+          <div className="relative h-full">
             <div className="flex flex-col items-center justify-center h-full w-full p-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
-                <Image
-                  src="/home/sponsors/converge.png"
-                  alt="Converge sponsor logo"
-                  width={250}
-                  height={250}
-                  objectFit="cover"
-                  className="w-full h-auto"
-                />
-                <Image
-                  src="/home/sponsors/nasa.png"
-                  alt="NASA sponsor logo"
-                  width={330}
-                  height={330}
-                  objectFit="cover"
-                  className="w-full h-auto"
-                />
-                <Image
-                  src="/home/sponsors/ansys.png"
-                  alt="Ansys sponsor logo"
-                  width={250}
-                  height={250}
-                  objectFit="cover"
-                  className="w-full h-auto"
-                />
-                {/* Empty div to occupy the fourth cell in the 2x2 grid */}
-                <div className="hidden md:block"></div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl">
+                {/* Converge */}
+                <div className="flex items-center justify-center w-48 h-48 md:w-56 md:h-56">
+                  <Image
+                    src="/home/sponsors/converge.png"
+                    alt="Converge sponsor logo"
+                    width={192}
+                    height={192}
+                    className="object-contain max-w-full max-h-full"
+                  />
+                </div>
+
+                {/* NASA — scaled up slightly with scale utility */}
+                <div className="flex items-center justify-center w-48 h-48 md:w-56 md:h-56">
+                  <div className="scale-120">
+                    <Image
+                      src="/home/sponsors/nasa.png"
+                      alt="NASA sponsor logo"
+                      width={250}
+                      height={250}
+                      className="object-contain max-w-full max-h-full"
+                    />
+                  </div>
+                </div>
+
+                {/* Ansys */}
+                <div className="flex items-center justify-center w-48 h-48 md:w-56 md:h-56">
+                  <div className="scale-140">
+                    <Image
+                      src="/home/sponsors/ansys.png"
+                      alt="Ansys sponsor logo"
+                      width={192}
+                      height={192}
+                      className="object-contain max-w-full max-h-full"
+                    />
+                  </div>
+                </div>
+
+                {/* optional placeholder for alignment */}
+                <div className="hidden md:block" />
               </div>
             </div>
           </div>

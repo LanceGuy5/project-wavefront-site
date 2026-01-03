@@ -15,7 +15,7 @@ export const ENGINEERS: TeamMember[] = [
     title: "Co-Founder & Propulsion Engineer",
     school: "University of Pennsylvania",
     major: "Mechanical Engineering & Applied Mechanics",
-    sentence: "“We're building a freaking rocket engine how cool is that.”",
+    sentence: "“We're building a rocket engine how cool is that.”",
     url: "https://www.samuel-hoffman.com/",
   },
   {

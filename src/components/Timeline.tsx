@@ -78,7 +78,7 @@ export default function Timeline({
   const monthLabels = getMonthLabels();
 
   return (
-    <div className="w-full py-12 px-4">
+    <div className="w-full py-12 px-10">
       {/* Timeline Container */}
       <div className="relative w-full" style={{ minHeight: "400px" }}>
         {/* Month Labels */}

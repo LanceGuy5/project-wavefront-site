@@ -54,6 +54,12 @@ export default function Header() {
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-12 text-xl">
             <Link
+              href="/mark-i"
+              className="hover:text-gray-400 hover:scale-105 transition duration-200"
+            >
+              MARK I
+            </Link>
+            <Link
               href="/our-team"
               className="hover:text-gray-400 hover:scale-105 transition duration-200"
             >
@@ -64,12 +70,6 @@ export default function Header() {
               className="hover:text-gray-400 hover:scale-105 transition duration-200"
             >
               CONTACT US
-            </Link>
-            <Link
-              href="/mark-i"
-              className="hover:text-gray-400 hover:scale-105 transition duration-200"
-            >
-              MARK I
             </Link>
           </div>
 
@@ -87,6 +87,13 @@ export default function Header() {
       {menuOpen && (
         <div className="md:hidden bg-black/90 backdrop-blur-sm text-center py-4 space-y-4 text-lg border-t border-gray-700">
           <Link
+            href="/mark-i"
+            onClick={() => setMenuOpen(false)}
+            className="block hover:text-gray-400"
+          >
+            MARK I
+          </Link>
+          <Link
             href="/our-team"
             onClick={() => setMenuOpen(false)}
             className="block hover:text-gray-400"
@@ -99,13 +106,6 @@ export default function Header() {
             className="block hover:text-gray-400"
           >
             CONTACT US
-          </Link>
-          <Link
-            href="/mark-i"
-            onClick={() => setMenuOpen(false)}
-            className="block hover:text-gray-400"
-          >
-            MARK I
           </Link>
         </div>
       )}

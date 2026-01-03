@@ -35,10 +35,20 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-6 tracking-wide">
               PROJECT WAVEFRONT
             </h1>
-            <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-              A Collaborative Undergraduate Team Advancing Innovation in
-              Propulsion Technology
+            <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+              A Collaborative Undergraduate Team Advancing the Future of
+              Rotating Detonation Propulsion Technology
             </p>
+
+            {/* Support Button */}
+            <Link
+              href="https://gofund.me/dd2b2e6a3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 bg-black-600 hover:bg-emerald-800 text-white font-bold text-lg rounded-lg transition-all duration-250 transform hover:scale-110 hover:shadow-xl"
+            >
+              Support Us
+            </Link>
           </div>
         </div>
 
@@ -64,9 +74,9 @@ export default function Home() {
               MARK I
             </h1>
             <p className="text-xl md:text-2xl mb-18 max-w-lg text-white">
-              Mark I will be the first rotating detonation rocket engine,
-              designed, fabricated, and constructed by an entirely undergraduate
-              team.
+              Mark I will be the first long-duration rotating detonation rocket
+              engine, designed, fabricated, and constructed by an entirely
+              student team.
             </p>
           </div>
         </div>
@@ -93,8 +103,8 @@ export default function Home() {
                 Guided through collaborations with experts across the industry,
                 including NASA, Project Wavefront is planning to close to the
                 loop from ideation to delivery in less than a year. With a test
-                campaign slated for 2026, Project Wavefront is ready to redefine
-                the future of Aerospace.
+                campaign slated for Q2 2026, Project Wavefront is ready to
+                redefine the future of Aerospace.
               </p>
             </div>
 
@@ -107,14 +117,15 @@ export default function Home() {
               <p className="text-md md:text-lg lg:text-lg text-slate-300 mb-12 leading-relaxed max-w-xl">
                 Project Wavefront aims to cultivate an engineering environment
                 that emphasizes technical rigor, project ownership, and a
-                culture of relentless innovation. As a non-profit research
-                group, our primary goal is to accelerate rotating detonation
-                rocket engine (RDRE) research. While significant research exists
-                surrounding RDREs, it remains highly confined to major aerospace
-                companies and well-funded laboratories. By thoroughly
-                documenting our process and publishing the principles behind our
-                system, we aim to bridge this gap and create a future where RDRE
-                research and innovation is more accessible.
+                culture of relentless innovation. As a 501c3 non-profit
+                educational research group, our primary goal is to accelerate
+                rotating detonation rocket engine (RDRE) research. While
+                significant research exists surrounding RDREs, it remains highly
+                confined to major aerospace companies and well-funded
+                laboratories. By thoroughly documenting our process and
+                publishing the principles behind our system, we aim to bridge
+                this gap and create a future where RDRE research and innovation
+                is more accessible.
               </p>
             </div>
           </div>

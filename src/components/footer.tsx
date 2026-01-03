@@ -22,8 +22,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-slate-300 mb-4 max-w-md text-sm">
-              A Collaborative Undergraduate Team Advancing Innovation in
-              Propulsion Technology
+              Building a Student-Led Future of Rotating Detonation Technology
             </p>
           </div>
 
@@ -51,6 +50,14 @@ export default function Footer() {
               >
                 MARK I
               </Link>
+              <a
+                href="https://gofund.me/687250765"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-fit hover:text-emerald-400 transition duration-200"
+              >
+                SUPPORT US
+              </a>
             </div>
           </div>
 

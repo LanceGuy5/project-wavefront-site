@@ -70,9 +70,9 @@ ${form.message}`,
           </div>
           <div className="animate-fade-slide-up">
             <h3 className="text-xl md:text-2xl lg:text-3xl text-gray-400 text-center">
-              Project Wavefront was founded with a mission to aid innovation in
-              the world of aerospace engineering and will always be open to
-              assistance from other like-minded individuals.
+              Project Wavefront was founded with a mission to foster innovation
+              in the aerospace engineering community and will always be open to
+              assistance and input from other passionate individuals.
             </h3>
           </div>
         </div>

@@ -15,8 +15,7 @@ export const ENGINEERS: TeamMember[] = [
     title: "Co-Founder & Propulsion Engineer",
     school: "University of Pennsylvania",
     major: "Mechanical Engineering & Applied Mechanics",
-    sentence:
-      "“I'm excited to learn the technical design processes behind rocket engines alongside a team that shares my passion for propulsion.”",
+    sentence: "“We're building a freaking rocket engine how cool is that.”",
     url: "https://www.samuel-hoffman.com/",
   },
   {
@@ -36,7 +35,7 @@ export const ENGINEERS: TeamMember[] = [
     school: "University of Pennsylvania",
     major: "Electrical & Systems Engineering",
     sentence:
-      "”This project is new, it's hard, and I actually get to help build it. Plus, what's not exciting about a rocket engine?”",
+      "“This project is new, it's hard, and I actually get to help build it. Plus, what's not exciting about a rocket engine?”",
     url: "https://www.linkedin.com/in/fernandodeory/",
   },
   {
@@ -56,13 +55,13 @@ export const ENGINEERS: TeamMember[] = [
     school: "University of Pennsylvania",
     major: "Physics",
     sentence:
-      "“I can't wait to take on the challenge of this project and contribute to such an incredible team.“",
+      "“I can't wait to take on the challenge of this project and contribute to such an incredible team.”",
     url: "https://www.linkedin.com/in/jason-de-gentile-325494219/",
   },
   {
     image: "/team/ari-weiner.jpg",
     name: "Ari Weiner",
-    title: "Mechanical Engineer III",
+    title: "Mechanical Engineer",
     school: "University of Pennsylvania",
     major: "Mechanical Engineering & Applied Mechanics",
     sentence:
@@ -72,7 +71,7 @@ export const ENGINEERS: TeamMember[] = [
   {
     image: "/team/ethan-gonzalez.jpg",
     name: "Ethan Gonzalez",
-    title: "Mechanical Engineer II",
+    title: "Mechanical Engineer",
     school: "University of Pennsylvania",
     major: "Mechanical Engineering & Applied Mechanics",
     sentence:
@@ -82,7 +81,7 @@ export const ENGINEERS: TeamMember[] = [
   {
     image: "/team/julie-sidana.jpg",
     name: "Julie Sidana",
-    title: "Mechanical Engineer II",
+    title: "Structural Analyst",
     school: "University of Pennsylvania",
     major: "Mechanical Engineering & Applied Mechanics",
     sentence:
@@ -90,24 +89,33 @@ export const ENGINEERS: TeamMember[] = [
     url: "https://www.linkedin.com/in/juliesidana/",
   },
   {
-    image: "/team/kylie-autullo.jpg",
-    name: "Kylie Autullo",
-    title: "Mechanical Engineer I",
-    school: "University of Pennsylvania",
-    major: "Mechanical Engineering & Applied Mechanics",
-    sentence:
-      "”I'm super excited to apply what I've learned in school to real-world engineering problems, all while working with a great group of people!”",
-    url: "https://habitual-heron-223.notion.site/Kylie-Autullo-Engineering-Portfolio-20c379826e6b80f4908afc4ae8976ae6",
-  },
-  {
     image: "/team/chris-stuit.jpg",
     name: "Christian Stuit",
-    title: "Mechanical Engineer I",
+    title: "Test Engineer",
     school: "University of Pennsylvania",
     major: "Mechanical Engineering & Applied Mechanics",
     sentence:
-      "”I'm excited to develop my technical skills, working as a team to solve interesting problems which may not have an immediately available answer!”",
+      "“I'm excited to develop my technical skills, working as a team to solve interesting problems which may not have an immediately available answer!”",
     url: "https://www.linkedin.com/in/christian-stuit-935143286/",
+  },
+  {
+    image: "/team/parsa-aghazadeh.jpg",
+    name: "Parsa Aghazadeh",
+    title: "Test Engineer",
+    school: "University of Pennsylvania",
+    major: "Mechanical Engineering & Applied Mechanics",
+    sentence:
+      "“I look forward to learning about engineering through the exciting process of building a rocket engine!”",
+  },
+  {
+    image: "/team/kylie-autullo.jpg",
+    name: "Kylie Autullo",
+    title: "Test Engineer",
+    school: "University of Pennsylvania",
+    major: "Mechanical Engineering & Applied Mechanics",
+    sentence:
+      "“I'm super excited to apply what I've learned in school to real-world engineering problems, all while working with a great group of people!”",
+    url: "https://habitual-heron-223.notion.site/Kylie-Autullo-Engineering-Portfolio-20c379826e6b80f4908afc4ae8976ae6",
   },
   {
     image: "/team/alex-mallet.jpg",
@@ -116,8 +124,28 @@ export const ENGINEERS: TeamMember[] = [
     school: "University of Pennsylvania",
     major: "Electrical & Systems Engineering",
     sentence:
-      "”I'm excited to explore advanced propulsion research while expanding my technical skills through hands-on contribution.”",
+      "“I'm excited to explore advanced propulsion research while expanding my technical skills through hands-on contribution.”",
     url: "https://www.linkedin.com/in/alexandermallet529/",
+  },
+  {
+    image: "/team/devan-malik.jpg",
+    name: "Devan Malik",
+    title: "Electrical Engineer",
+    school: "University of Pennsylvania",
+    major: "Electrical & Systems Engineering",
+    sentence:
+      "“Wavefront is a chance to work directly with cutting-edge propulsion tech alongside a driven team of engineers pushing the limits of what\'s possible.”",
+    url: "https://www.linkedin.com/in/devan-malik",
+  },
+  {
+    image: "/team/malin-kussi.jpg",
+    name: "Malin Kussi",
+    title: "Software Engineer",
+    school: "Temple University",
+    major: "Computer Science",
+    sentence:
+      "“I'm excited to apply my technical skills and learn more about rocket engine systems alongside a team that shares the same passion for propulsion!”",
+    url: "https://www.linkedin.com/in/malin-kussi/",
   },
   {
     image: "/team/andrew-rebello.jpg",
@@ -125,21 +153,12 @@ export const ENGINEERS: TeamMember[] = [
     title: "Electrical Engineer",
     school: "University of Pennsylvania",
     major: "Mechanical Engineering & Applied Mechanics",
-    sentence: "”What could be cooler than creating a conduit to the cosmos?”",
+    sentence: "“What could be cooler than creating a conduit to the cosmos?”",
     url: "https://www.linkedin.com/in/andrew-r-844926380/",
   },
-  // {
-  //               image:"/team/devan-malik.jpg",
-  //               name:"Devan Malik",
-  //               title:"Electrical Engineer",
-  //               school:"University of Pennsylvania",
-  //               major:"Electrical & Systems Engineering",
-  //               sentence:'"Wavefront is a chance to work directly with cutting-edge propulsion tech alongside a driven team of engineers pushing the limits of what's possible."',
-  //               url:"https://www.linkedin.com/in/devan-malik"
-  // }
 ];
 
-export const MARKETING: TeamMember[] = [
+export const OPERATIONS: TeamMember[] = [
   {
     image: "/team/reid-glaros.jpg",
     name: "Reid Glaros",
@@ -159,5 +178,15 @@ export const MARKETING: TeamMember[] = [
     sentence:
       "“I'm looking forward to sharing stories of innovation, and building support for bold, student-led technology.”",
     url: "https://www.linkedin.com/in/elliot-dewire/",
+  },
+  {
+    image: "/team/jacob-stein.jpg",
+    name: "Jacob Stein",
+    title: "Chief Administrative Officer",
+    school: "Northwestern University",
+    major: "Philosophy & Psychology",
+    sentence:
+      "“I'm excited to be part of a team of passionate innovators who share my belief in this challenging and invigorating initiative.”",
+    url: "https://www.linkedin.com/in/jacob-stein7/",
   },
 ];

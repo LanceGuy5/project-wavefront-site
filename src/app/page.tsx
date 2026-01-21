@@ -187,7 +187,8 @@ export default function Home() {
           {/* Right Column: Sponsor Logos */}
           <div className="relative h-full">
             <div className="flex flex-col items-center justify-center h-full w-full p-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl">
+              {/* Top row: 3 logos side by side */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mb-8">
                 {/* Converge */}
                 <div className="flex items-center justify-center w-48 h-48 md:w-56 md:h-56">
                   <Image
@@ -224,9 +225,31 @@ export default function Home() {
                     />
                   </div>
                 </div>
+              </div>
 
-                {/* optional placeholder for alignment */}
-                <div className="hidden md:block" />
+              {/* Bottom row: 2 logos side by side */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl">
+                {/* Renishaw */}
+                <div className="flex items-center justify-center w-60 h-30 md:w-70 md:h-30">
+                  <Image
+                    src="/home/sponsors/renishaw.png"
+                    alt="Renishaw sponsor logo"
+                    width={400}
+                    height={150}
+                    className="object-contain max-w-full max-h-full"
+                  />
+                </div>
+
+                {/* SendCutSend */}
+                <div className="flex items-center justify-center w-60 h-30 md:w-70 md:h-30">
+                  <Image
+                    src="/home/sponsors/sendcutsend.png"
+                    alt="SendCutSend sponsor logo"
+                    width={400}
+                    height={150}
+                    className="object-contain max-w-full max-h-full"
+                  />
+                </div>
               </div>
             </div>
           </div>

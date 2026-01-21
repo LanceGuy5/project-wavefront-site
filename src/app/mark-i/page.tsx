@@ -184,7 +184,7 @@ export default function Mark1RDRE() {
                 date: "2025-06-01",
                 title: "Project Kickoff",
                 description:
-                  "Sam and Josh found Project Wavefront with 5 engineers. Technical requirements and a project roadmap are established, with initial design work beginning.",
+                  "Josh and Sam found Project Wavefront with 5 engineers. Technical requirements and a project roadmap are established, with initial design work beginning.",
                 completed: true,
               },
               {
@@ -258,7 +258,14 @@ export default function Mark1RDRE() {
                 completed: true,
               },
               {
-                date: "2026-01-24",
+                date: "2026-01-20",
+                title: "Mark I Demonstrator is Printed",
+                description:
+                  "The team prints a heatsink-cooled version of Mark I to verify combustion geometry and test systems.",
+                completed: true,
+              },
+              {
+                date: "2026-01-31",
                 title: "Critical Design Review",
                 description:
                   "The team presents their design and analysis to a panel of engineers and experts from industry and academia.",
@@ -269,13 +276,6 @@ export default function Mark1RDRE() {
                 title: "Test Stand and Control Systems Build Begins",
                 description:
                   "Building of the custom test stand and electronic control/data management system begins to move towards subcomponent testing.",
-                completed: false,
-              },
-              {
-                date: "2026-03-07",
-                title: "Mark I Demonstrator is Printed",
-                description:
-                  "The team prints a heatsink-cooled version of Mark I to verify combustion geometry and test systems.",
                 completed: false,
               },
               {

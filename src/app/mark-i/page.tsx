@@ -34,7 +34,7 @@ export default function Mark1RDRE() {
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-8">
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold">3 kN</span>
+              <span className="text-3xl font-bold">2 kN</span>
               <p>Thrust</p>
             </div>
             <div className="flex flex-col items-center">
@@ -42,7 +42,7 @@ export default function Mark1RDRE() {
               <p>Burn Time</p>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold">1.12 MW</span>
+              <span className="text-3xl font-bold">0.95 MW</span>
               <p>Water Cooling</p>
             </div>
             <div className="flex flex-col items-center">
@@ -50,7 +50,7 @@ export default function Mark1RDRE() {
               <p>Fuel/Oxidizer</p>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold">262 sec</span>
+              <span className="text-3xl font-bold">255 sec</span>
               <p>Specific Impulse (sea-level)</p>
             </div>
             <div className="flex flex-col items-center">
@@ -58,11 +58,11 @@ export default function Mark1RDRE() {
               <p>Chamber Diameter</p>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold">1.18 kg/s</span>
+              <span className="text-3xl font-bold">0.82 kg/s</span>
               <p>Propellant Flow Rate</p>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold">13 kHz</span>
+              <span className="text-3xl font-bold">13.5 kHz</span>
               <p>Frequency</p>
             </div>
           </div>
@@ -95,12 +95,12 @@ export default function Mark1RDRE() {
           <h2 className="text-4xl font-bold mb-8">KEY SPECS</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
             {[
-              { label: "Target Thrust", value: "3 kN" },
-              { label: "Isp (sea-level)", value: "262 sec" },
+              { label: "Target Thrust", value: "2 kN" },
+              { label: "Isp (sea-level)", value: "255 sec" },
               { label: "Burn Time", value: "30 sec" },
-              { label: "Propellant MFR", value: "1.18 kg/s" },
-              { label: "Water Cooling", value: "1.12 MW" },
-              { label: "Frequency", value: "13 kHz" },
+              { label: "Propellant MFR", value: "0.82 kg/s" },
+              { label: "Water Cooling", value: "0.95 MW" },
+              { label: "Frequency", value: "13.5 kHz" },
             ].map((spec, i) => (
               <div
                 key={i}

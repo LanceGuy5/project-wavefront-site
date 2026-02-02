@@ -268,8 +268,8 @@ export default function Mark1RDRE() {
                 date: "2026-01-31",
                 title: "Critical Design Review",
                 description:
-                  "The team presents their design and analysis to a panel of engineers and experts from industry and academia.",
-                completed: false,
+                  "The team presents their design and analysis to a panel of engineers and experts from industry and academia to gather feedback and validate key systems.",
+                completed: true,
               },
               {
                 date: "2026-02-14",

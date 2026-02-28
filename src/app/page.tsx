@@ -10,6 +10,74 @@ import Link from "next/link";
 
 // hello world!
 
+const sponsors = [
+  {
+    src: "/home/sponsors/converge.png",
+    alt: "Converge sponsor logo",
+    href: "https://convergecfd.com",
+    width: 192,
+    height: 192,
+    containerClass: "w-48 h-48 md:w-56 md:h-56",
+    scaleClass: "",
+  },
+  {
+    src: "/home/sponsors/nasa.png",
+    alt: "NASA sponsor logo",
+    href: "https://www.nasa.gov",
+    width: 250,
+    height: 250,
+    containerClass: "w-48 h-48 md:w-56 md:h-56",
+    scaleClass: "scale-120",
+  },
+  {
+    src: "/home/sponsors/ansys.png",
+    alt: "Ansys sponsor logo",
+    href: "https://www.ansys.com",
+    width: 192,
+    height: 192,
+    containerClass: "w-48 h-48 md:w-56 md:h-56",
+    scaleClass: "scale-110",
+  },
+];
+
+const bottomSponsors = [
+  {
+    src: "/home/sponsors/renishaw.png",
+    alt: "Renishaw sponsor logo",
+    href: "https://www.renishaw.com",
+    width: 400,
+    height: 150,
+    containerClass: "w-60 h-30 md:w-70 md:h-30",
+  },
+  {
+    src: "/home/sponsors/sendcutsend.png",
+    alt: "SendCutSend sponsor logo",
+    href: "https://sendcutsend.com",
+    width: 400,
+    height: 150,
+    containerClass: "w-60 h-30 md:w-70 md:h-30",
+  },
+];
+
+const thirdRowSponsors = [
+  {
+    src: "/home/sponsors/ati.png",
+    alt: "ATI Materials sponsor logo",
+    href: "https://www.atimaterials.com",
+    width: 500,
+    height: 200,
+    containerClass: "w-72 h-36 md:w-80 md:h-40",
+  },
+  {
+    src: "/home/sponsors/boostlab.png",
+    alt: "Boostlab sponsor logo",
+    href: "https://boostlab.us",
+    width: 500,
+    height: 200,
+    containerClass: "w-72 h-36 md:w-80 md:h-40",
+  },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen text-foreground relative overflow-hidden">
@@ -189,67 +257,67 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center h-full w-full p-8">
               {/* Top row: 3 logos side by side */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mb-8">
-                {/* Converge */}
-                <div className="flex items-center justify-center w-48 h-48 md:w-56 md:h-56">
-                  <Image
-                    src="/home/sponsors/converge.png"
-                    alt="Converge sponsor logo"
-                    width={192}
-                    height={192}
-                    className="object-contain max-w-full max-h-full"
-                  />
-                </div>
-
-                {/* NASA — scaled up slightly with scale utility */}
-                <div className="flex items-center justify-center w-48 h-48 md:w-56 md:h-56">
-                  <div className="scale-120">
-                    <Image
-                      src="/home/sponsors/nasa.png"
-                      alt="NASA sponsor logo"
-                      width={250}
-                      height={250}
-                      className="object-contain max-w-full max-h-full"
-                    />
-                  </div>
-                </div>
-
-                {/* Ansys */}
-                <div className="flex items-center justify-center w-48 h-48 md:w-56 md:h-56">
-                  <div className="scale-140">
-                    <Image
-                      src="/home/sponsors/ansys.png"
-                      alt="Ansys sponsor logo"
-                      width={192}
-                      height={192}
-                      className="object-contain max-w-full max-h-full"
-                    />
-                  </div>
-                </div>
+                {sponsors.map((sponsor) => (
+                  <Link
+                    key={sponsor.alt}
+                    href={sponsor.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center justify-center ${sponsor.containerClass} transition-opacity duration-200 hover:opacity-75`}
+                  >
+                    <div className={sponsor.scaleClass || undefined}>
+                      <Image
+                        src={sponsor.src}
+                        alt={sponsor.alt}
+                        width={sponsor.width}
+                        height={sponsor.height}
+                        className="object-contain max-w-full max-h-full"
+                      />
+                    </div>
+                  </Link>
+                ))}
               </div>
 
               {/* Bottom row: 2 logos side by side */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl">
-                {/* Renishaw */}
-                <div className="flex items-center justify-center w-60 h-30 md:w-70 md:h-30">
-                  <Image
-                    src="/home/sponsors/renishaw.png"
-                    alt="Renishaw sponsor logo"
-                    width={400}
-                    height={150}
-                    className="object-contain max-w-full max-h-full"
-                  />
-                </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mt-1">
+                {bottomSponsors.map((sponsor) => (
+                  <Link
+                    key={sponsor.alt}
+                    href={sponsor.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center justify-center ${sponsor.containerClass} transition-opacity duration-200 hover:opacity-75`}
+                  >
+                    <Image
+                      src={sponsor.src}
+                      alt={sponsor.alt}
+                      width={sponsor.width}
+                      height={sponsor.height}
+                      className="object-contain max-w-full max-h-full"
+                    />
+                  </Link>
+                ))}
+              </div>
 
-                {/* SendCutSend */}
-                <div className="flex items-center justify-center w-60 h-30 md:w-70 md:h-30">
-                  <Image
-                    src="/home/sponsors/sendcutsend.png"
-                    alt="SendCutSend sponsor logo"
-                    width={400}
-                    height={150}
-                    className="object-contain max-w-full max-h-full"
-                  />
-                </div>
+              {/* Third row: ATI + Boostlab */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mt-1">
+                {thirdRowSponsors.map((sponsor) => (
+                  <Link
+                    key={sponsor.alt}
+                    href={sponsor.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center justify-center ${sponsor.containerClass} transition-opacity duration-200 hover:opacity-75`}
+                  >
+                    <Image
+                      src={sponsor.src}
+                      alt={sponsor.alt}
+                      width={sponsor.width}
+                      height={sponsor.height}
+                      className="object-contain max-w-full max-h-full"
+                    />
+                  </Link>
+                ))}
               </div>
             </div>
           </div>

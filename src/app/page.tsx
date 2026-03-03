@@ -20,7 +20,7 @@ const sponsors = [
     containerClass: "w-48 h-48 md:w-56 md:h-56",
     scaleClass: "",
   },
-  {
+  /*{
     src: "/home/sponsors/nasa.png",
     alt: "NASA sponsor logo",
     href: "https://www.nasa.gov",
@@ -28,7 +28,7 @@ const sponsors = [
     height: 250,
     containerClass: "w-48 h-48 md:w-56 md:h-56",
     scaleClass: "scale-120",
-  },
+  },*/
   {
     src: "/home/sponsors/ansys.png",
     alt: "Ansys sponsor logo",
@@ -256,7 +256,7 @@ export default function Home() {
           <div className="relative h-full">
             <div className="flex flex-col items-center justify-center h-full w-full p-8">
               {/* Top row: 3 logos side by side */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mb-8">
                 {sponsors.map((sponsor) => (
                   <Link
                     key={sponsor.alt}
@@ -279,7 +279,7 @@ export default function Home() {
               </div>
 
               {/* Bottom row: 2 logos side by side */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mt-1">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-1xl mt-2">
                 {bottomSponsors.map((sponsor) => (
                   <Link
                     key={sponsor.alt}

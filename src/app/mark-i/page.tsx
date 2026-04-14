@@ -178,7 +178,7 @@ export default function Mark1RDRE() {
 
           <Timeline
             startDate="2025-06"
-            endDate="2026-06"
+            endDate="2026-10"
             milestones={[
               {
                 date: "2025-06-01",
@@ -272,28 +272,42 @@ export default function Mark1RDRE() {
                 completed: true,
               },
               {
-                date: "2026-02-14",
+                date: "2026-02-17",
+                title: "Cooling Network V2 Design",
+                description:
+                  "The cooling network is redesigned for a ~30% efficiency improvement by utilizing a creative cooling concept.",
+                completed: true,
+              },
+              {
+                date: "2026-04-01",
                 title: "Test Stand and Control Systems Build Begins",
                 description:
                   "Building of the custom test stand and electronic control/data management system begins to move towards subcomponent testing.",
+                completed: true,
+              },
+              {
+                date: "2026-05-10",
+                title: "Summer Break",
+                description:
+                  "School summer break begins and Project Wavefront members spread out across the aerospace industry to complete internships.",
                 completed: false,
               },
               {
-                date: "2026-03-21",
+                date: "2026-08-23",
                 title: "Mark I Demonstrator is Tested",
                 description:
                   "Hotfire testing of the Mark I heatsink demonstrator verifies all components and subsystems.",
                 completed: false,
               },
               {
-                date: "2026-04-04",
+                date: "2026-08-30",
                 title: "Mark I Hotfire Buildup",
                 description:
                   "Production of Mark I begins, and the team builds up to a full test campaign.",
                 completed: false,
               },
               {
-                date: "2026-05-17",
+                date: "2026-09-27",
                 title: "Mark I Hotfire",
                 description: "Mark I is hotfired, and data analysis begins.",
                 completed: false,

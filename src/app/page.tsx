@@ -78,6 +78,25 @@ const thirdRowSponsors = [
   },
 ];
 
+const fourthRowSponsors = [
+  {
+    src: "/home/sponsors/hygrade.jpg",
+    alt: "Hy-Grade Valves sponsor logo",
+    href: "https://hy-grade.com/",
+    width: 500,
+    height: 200,
+    containerClass: "w-72 h-36 md:w-80 md:h-40",
+  },
+  {
+    src: "/home/sponsors/kulite.png",
+    alt: "Kulite Semiconductors sponsor logo",
+    href: "https://kulite.com/",
+    width: 500,
+    height: 200,
+    containerClass: "w-72 h-36 md:w-80 md:h-40",
+  },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen text-foreground relative overflow-hidden">
@@ -302,6 +321,27 @@ export default function Home() {
               {/* Third row: ATI + Boostlab */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mt-1">
                 {thirdRowSponsors.map((sponsor) => (
+                  <Link
+                    key={sponsor.alt}
+                    href={sponsor.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center justify-center ${sponsor.containerClass} transition-opacity duration-200 hover:opacity-75`}
+                  >
+                    <Image
+                      src={sponsor.src}
+                      alt={sponsor.alt}
+                      width={sponsor.width}
+                      height={sponsor.height}
+                      className="object-contain max-w-full max-h-full"
+                    />
+                  </Link>
+                ))}
+              </div>
+
+              {/* Fourth row: Hy-Grade + Kulite */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mt-1">
+                {fourthRowSponsors.map((sponsor) => (
                   <Link
                     key={sponsor.alt}
                     href={sponsor.href}

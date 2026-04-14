@@ -49,7 +49,6 @@ export default function Timeline({
   // Generate month labels (fewer labels for better spacing)
   const getMonthLabels = () => {
     const labels = [];
-    const current = new Date(start);
     const monthDiff =
       (end.getFullYear() - start.getFullYear()) * 12 +
       (end.getMonth() - start.getMonth());

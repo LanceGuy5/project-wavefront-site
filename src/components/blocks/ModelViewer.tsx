@@ -18,6 +18,7 @@ import {
   useState,
 } from "react";
 import * as THREE from "three";
+import { OrbitControls as OrbitControlsImpl } from "three-stdlib";
 import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
 
 export interface ViewerProps {
@@ -98,9 +99,7 @@ const DesktopControls: FC<{
   zoomEnabled: boolean;
   enableRotate: boolean;
 }> = ({ pivot, min, max, zoomEnabled, enableRotate }) => {
-  const ref = useRef<{ target: THREE.Vector3; update: () => void } | null>(
-    null,
-  );
+  const ref = useRef<OrbitControlsImpl | null>(null);
   useFrame(() => {
     if (ref.current) {
       ref.current.target.copy(pivot);

@@ -11,15 +11,6 @@ import Link from "next/link";
 // hello world!
 
 const sponsors = [
-  {
-    src: "/home/sponsors/converge.png",
-    alt: "Converge sponsor logo",
-    href: "https://convergecfd.com",
-    width: 192,
-    height: 192,
-    containerClass: "w-48 h-48 md:w-56 md:h-56",
-    scaleClass: "",
-  },
   /*{
     src: "/home/sponsors/nasa.png",
     alt: "NASA sponsor logo",
@@ -56,25 +47,6 @@ const bottomSponsors = [
     width: 400,
     height: 150,
     containerClass: "w-60 h-30 md:w-70 md:h-30",
-  },
-];
-
-const thirdRowSponsors = [
-  {
-    src: "/home/sponsors/ati.png",
-    alt: "ATI Materials sponsor logo",
-    href: "https://www.atimaterials.com",
-    width: 500,
-    height: 200,
-    containerClass: "w-72 h-36 md:w-80 md:h-40",
-  },
-  {
-    src: "/home/sponsors/boostlab.png",
-    alt: "Boostlab sponsor logo",
-    href: "https://boostlab.us",
-    width: 500,
-    height: 200,
-    containerClass: "w-72 h-36 md:w-80 md:h-40",
   },
 ];
 
@@ -123,8 +95,7 @@ export default function Home() {
               PROJECT WAVEFRONT
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-              A Collaborative Undergraduate Team Advancing the Future of
-              Rotating Detonation Propulsion Technology
+              More Efficient Rocket Engines, Built by Students
             </p>
 
             {/* Support Button */}
@@ -185,13 +156,13 @@ export default function Home() {
                 </h3>
               </div>
               <p className="text-md md:text-lg lg:text-lg text-slate-300 mb-12 leading-relaxed max-w-xl">
-                Mark I is our proof of concept. Every component is designed and
-                fabricated from the ground up by an entirely undergraduate team.
-                Guided through collaborations with experts across the industry,
-                including NASA, Project Wavefront is planning to close to the
-                loop from ideation to delivery in less than a year. With a test
-                campaign slated for Q2 2026, Project Wavefront is ready to
-                redefine the future of Aerospace.
+                Mark I is our proof of concept. The entire engine is designed
+                and fabricated from the ground up by an entirely undergraduate
+                team. Guided through collaborations with experts across the
+                industry, including NASA, Project Wavefront is planning to close
+                to the loop from ideation to delivery in less than 12 months.
+                With a test campaign slated for Q3 2026, Project Wavefront is
+                ready to redefine the future of Aerospace.
               </p>
             </div>
 
@@ -300,27 +271,6 @@ export default function Home() {
               {/* Bottom row: 2 logos side by side */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-1xl mt-2">
                 {bottomSponsors.map((sponsor) => (
-                  <Link
-                    key={sponsor.alt}
-                    href={sponsor.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex items-center justify-center ${sponsor.containerClass} transition-opacity duration-200 hover:opacity-75`}
-                  >
-                    <Image
-                      src={sponsor.src}
-                      alt={sponsor.alt}
-                      width={sponsor.width}
-                      height={sponsor.height}
-                      className="object-contain max-w-full max-h-full"
-                    />
-                  </Link>
-                ))}
-              </div>
-
-              {/* Third row: ATI + Boostlab */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mt-1">
-                {thirdRowSponsors.map((sponsor) => (
                   <Link
                     key={sponsor.alt}
                     href={sponsor.href}

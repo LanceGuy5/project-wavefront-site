@@ -8,7 +8,7 @@ export interface TeamMember {
   url?: string;
 }
 
-export const ENGINEERS: TeamMember[] = [
+export const ACTIVE_MEMBERS: TeamMember[] = [
   {
     image: "/team/sam-hoffman.jpg",
     name: "Sam Hoffman",
@@ -29,14 +29,14 @@ export const ENGINEERS: TeamMember[] = [
     url: "https://www.linkedin.com/in/joshua-dalal-6b8a5519b/",
   },
   {
-    image: "/team/fernando-deory.jpg",
-    name: "Fernando de Ory",
+    image: "/team/devan-malik.jpg",
+    name: "Devan Malik",
     title: "Control Systems Lead",
     school: "University of Pennsylvania",
     major: "Electrical & Systems Engineering",
     sentence:
-      "“This project is new, it's hard, and I actually get to help build it. Plus, what's not exciting about a rocket engine?”",
-    url: "https://www.linkedin.com/in/fernandodeory/",
+      "“Wavefront is a chance to work directly with cutting-edge propulsion tech alongside a driven team of engineers pushing the limits of what\'s possible.”",
+    url: "https://www.linkedin.com/in/devan-malik",
   },
   {
     image: "/team/annie-gao.jpg",
@@ -69,16 +69,6 @@ export const ENGINEERS: TeamMember[] = [
     url: "https://www.ariweiner.com/",
   },
   {
-    image: "/team/ethan-gonzalez.jpg",
-    name: "Ethan Gonzalez",
-    title: "Mechanical Engineer",
-    school: "University of Pennsylvania",
-    major: "Mechanical Engineering & Applied Mechanics",
-    sentence:
-      "“I'm looking forward to growing as an engineer through technical challenges, team collaboration, and meaningful contributions to propulsion technology.”",
-    url: "https://www.linkedin.com/in/ethan-ryan-gonzalez/",
-  },
-  {
     image: "/team/julie-sidana.jpg",
     name: "Julie Sidana",
     title: "Structural Analyst",
@@ -97,6 +87,49 @@ export const ENGINEERS: TeamMember[] = [
     sentence:
       "“I'm excited to develop my technical skills, working as a team to solve interesting problems which may not have an immediately available answer!”",
     url: "https://www.linkedin.com/in/christian-stuit-935143286/",
+  },
+  {
+    image: "/team/malin-kussi.jpg",
+    name: "Malin Kussi",
+    title: "Software Engineer",
+    school: "Temple University",
+    major: "Computer Science",
+    sentence:
+      "“I'm excited to apply my technical skills and learn more about rocket engine systems alongside a team that shares the same passion for propulsion!”",
+    url: "https://www.linkedin.com/in/malin-kussi/",
+  },
+  {
+    image: "/team/jacob-stein.jpg",
+    name: "Jacob Stein",
+    title: "Chief Administrative Officer",
+    school: "Northwestern University",
+    major: "Philosophy & Psychology",
+    sentence:
+      "“I'm excited to be part of a team of passionate innovators who share my belief in this challenging and invigorating initiative.”",
+    url: "https://www.linkedin.com/in/jacob-stein7/",
+  },
+];
+
+export const PREVIOUS_MEMBERS: TeamMember[] = [
+  {
+    image: "/team/fernando-deory.jpg",
+    name: "Fernando de Ory",
+    title: "Control Systems Lead",
+    school: "University of Pennsylvania",
+    major: "Electrical & Systems Engineering",
+    sentence:
+      "“This project is new, it's hard, and I actually get to help build it. Plus, what's not exciting about a rocket engine?”",
+    url: "https://www.linkedin.com/in/fernandodeory/",
+  },
+  {
+    image: "/team/ethan-gonzalez.jpg",
+    name: "Ethan Gonzalez",
+    title: "Mechanical Engineer",
+    school: "University of Pennsylvania",
+    major: "Mechanical Engineering & Applied Mechanics",
+    sentence:
+      "“I'm looking forward to growing as an engineer through technical challenges, team collaboration, and meaningful contributions to propulsion technology.”",
+    url: "https://www.linkedin.com/in/ethan-ryan-gonzalez/",
   },
   {
     image: "/team/parsa-aghazadeh.jpg",
@@ -128,26 +161,6 @@ export const ENGINEERS: TeamMember[] = [
     url: "https://www.linkedin.com/in/alexandermallet529/",
   },
   {
-    image: "/team/devan-malik.jpg",
-    name: "Devan Malik",
-    title: "Electrical Engineer",
-    school: "University of Pennsylvania",
-    major: "Electrical & Systems Engineering",
-    sentence:
-      "“Wavefront is a chance to work directly with cutting-edge propulsion tech alongside a driven team of engineers pushing the limits of what\'s possible.”",
-    url: "https://www.linkedin.com/in/devan-malik",
-  },
-  {
-    image: "/team/malin-kussi.jpg",
-    name: "Malin Kussi",
-    title: "Software Engineer",
-    school: "Temple University",
-    major: "Computer Science",
-    sentence:
-      "“I'm excited to apply my technical skills and learn more about rocket engine systems alongside a team that shares the same passion for propulsion!”",
-    url: "https://www.linkedin.com/in/malin-kussi/",
-  },
-  {
     image: "/team/andrew-rebello.jpg",
     name: "Andrew Rebello",
     title: "Electrical Engineer",
@@ -156,9 +169,6 @@ export const ENGINEERS: TeamMember[] = [
     sentence: "“What could be cooler than creating a conduit to the cosmos?”",
     url: "https://www.linkedin.com/in/andrew-r-844926380/",
   },
-];
-
-export const OPERATIONS: TeamMember[] = [
   {
     image: "/team/reid-glaros.jpg",
     name: "Reid Glaros",
@@ -178,15 +188,5 @@ export const OPERATIONS: TeamMember[] = [
     sentence:
       "“I'm looking forward to sharing stories of innovation, and building support for bold, student-led technology.”",
     url: "https://www.linkedin.com/in/elliot-dewire/",
-  },
-  {
-    image: "/team/jacob-stein.jpg",
-    name: "Jacob Stein",
-    title: "Chief Administrative Officer",
-    school: "Northwestern University",
-    major: "Philosophy & Psychology",
-    sentence:
-      "“I'm excited to be part of a team of passionate innovators who share my belief in this challenging and invigorating initiative.”",
-    url: "https://www.linkedin.com/in/jacob-stein7/",
   },
 ];

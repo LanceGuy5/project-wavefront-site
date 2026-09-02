@@ -1,5 +1,5 @@
 import Beams from "@/components/blocks/Beams";
-import { ENGINEERS, OPERATIONS } from "@/components/data/team";
+import { ACTIVE_MEMBERS, PREVIOUS_MEMBERS } from "@/components/data/team";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 
@@ -39,25 +39,22 @@ export default function OurTeam() {
       </section>
 
       <div className="relative bg-black z-0">
-        {/** ENGINEERS */}
+        {/** ACTIVE MEMBERS */}
         <section className="pt-12 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-left mb-12">
-            ENGINEERING
-          </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-14 md:gap-16 lg:gap-20 xl:gap-24 justify-center max-w-[90vw]">
-            {ENGINEERS.map((member) => (
+            {ACTIVE_MEMBERS.map((member) => (
               <ProfileCard key={member.name} {...member} />
             ))}
           </div>
         </section>
 
-        {/** OPERATIONS */}
+        {/** PREVIOUS MEMBERS */}
         <section className="pt-12 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold text-left mb-12">
-            OPERATIONS
+            PREVIOUS MEMBERS
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-14 md:gap-16 lg:gap-20 xl:gap-24 justify-center max-w-[90vw]">
-            {OPERATIONS.map((member) => (
+            {PREVIOUS_MEMBERS.map((member) => (
               <ProfileCard key={member.name} {...member} />
             ))}
           </div>

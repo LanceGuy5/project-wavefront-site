@@ -77,18 +77,38 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   * {
     @apply border-border outline-ring/50;
   }
 
   body {
     @apply bg-background text-foreground;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: rgb(16 185 129 / 35%);
+    color: white;
   }
 }
 
 /* src/app/globals.css */
 .animate-fade-slide-up {
   animation: fadeSlideUp 1s ease-in-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-fade-slide-up {
+    animation: none;
+  }
 }
 
 @keyframes fadeSlideUp {

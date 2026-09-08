@@ -32,12 +32,12 @@ export default function Header() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 bg-background/60 backdrop-blur-sm transition-transform duration-300 select-none ${
+      className={`fixed top-0 w-full z-50 border-b border-white/10 bg-black/75 backdrop-blur-xl transition-transform duration-300 select-none ${
         isScrolled ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div className="mx-6 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 text-lg">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
@@ -46,13 +46,13 @@ export default function Header() {
               width={40}
               height={40}
             />
-            <span className="ml-2 text-xl font-bold tracking-wide">
+            <span className="ml-2 text-base font-bold tracking-[0.12em] sm:text-lg">
               PROJECT WAVEFRONT
             </span>
           </Link>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex space-x-12 text-xl">
+          <div className="hidden items-center gap-8 text-sm font-medium tracking-[0.12em] md:flex">
             <Link
               href="/mark-i"
               className="hover:text-gray-400 hover:scale-105 transition duration-200"
@@ -77,6 +77,8 @@ export default function Header() {
           <button
             className="md:hidden p-2 text-gray-300 hover:text-white transition"
             onClick={() => setMenuOpen(!menuOpen)}
+            aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={menuOpen}
           >
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -85,7 +87,7 @@ export default function Header() {
 
       {/* Mobile Dropdown */}
       {menuOpen && (
-        <div className="md:hidden bg-black/90 backdrop-blur-sm text-center py-4 space-y-4 text-lg border-t border-gray-700">
+        <div className="space-y-4 border-t border-white/10 bg-black/95 py-4 text-center text-base tracking-[0.1em] backdrop-blur-xl md:hidden">
           <Link
             href="/mark-i"
             onClick={() => setMenuOpen(false)}

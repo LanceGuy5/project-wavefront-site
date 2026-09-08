@@ -75,6 +75,20 @@ export default function Timeline({
   };
 
   const monthLabels = getMonthLabels();
+  const summerBreakStart = milestones.find(
+    (milestone) => milestone.title === "Summer Break Begins",
+  );
+  const summerBreakEnd = milestones.find(
+    (milestone) => milestone.title === "Summer Break Ends",
+  );
+
+  const summerBreakRange =
+    summerBreakStart && summerBreakEnd
+      ? {
+          left: getMilestonePosition(summerBreakStart.date),
+          right: getMilestonePosition(summerBreakEnd.date),
+        }
+      : null;
 
   return (
     <div className="w-full py-12 px-10">
@@ -102,6 +116,22 @@ export default function Timeline({
             </div>
           ))}
         </div>
+
+        {/* Summer break interval */}
+        {summerBreakRange && (
+          <div
+            aria-label="Summer break from May 10 through August 23, 2026"
+            className="pointer-events-none absolute top-12 h-10 border-y border-red-400/25 bg-red-500/15"
+            style={{
+              left: `${summerBreakRange.left}%`,
+              width: `${summerBreakRange.right - summerBreakRange.left}%`,
+            }}
+          >
+            <span className="absolute left-1/2 top-full mt-2 -translate-x-1/2 whitespace-nowrap text-[10px] font-semibold uppercase tracking-[0.14em] text-red-300/80">
+              Summer break
+            </span>
+          </div>
+        )}
 
         {/* Timeline Line */}
         <div className="absolute top-16 left-0 right-0 h-1 bg-gradient-to-r from-emerald-600 via-slate-600 to-slate-700 rounded-full" />

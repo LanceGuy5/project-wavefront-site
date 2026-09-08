@@ -77,7 +77,9 @@ export default function Header() {
           <button
             className="md:hidden p-2 text-gray-300 hover:text-white transition"
             onClick={() => setMenuOpen(!menuOpen)}
-            aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-label={
+              menuOpen ? "Close navigation menu" : "Open navigation menu"
+            }
             aria-expanded={menuOpen}
           >
             {menuOpen ? <X size={24} /> : <Menu size={24} />}

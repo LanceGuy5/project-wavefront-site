@@ -160,9 +160,9 @@ export default function Home() {
                 and fabricated from the ground up by an entirely undergraduate
                 team. Guided through collaborations with experts across the
                 industry, including NASA, Project Wavefront is planning to close
-                the loop from ideation to delivery in less than 12 months.
-                With a test campaign slated for Q3 2026, Project Wavefront is
-                ready to redefine the future of Aerospace.
+                the loop from ideation to delivery in less than 12 months. With
+                a test campaign slated for Q3 2026, Project Wavefront is ready
+                to redefine the future of Aerospace.
               </p>
             </div>
 
@@ -226,8 +226,8 @@ export default function Home() {
             <p className="text-xl md:text-2xl lg:text-xl text-slate-300 mb-12 leading-relaxed max-w-xl">
               At Project Wavefront we aim to redefine what the future of
               propulsion looks like through student innovation. With the support
-              of partners and sponsors who share our vision, we can
-              take our work even farther.
+              of partners and sponsors who share our vision, we can take our
+              work even farther.
             </p>
             <p className="text-xl md:text-2xl lg:text-xl text-slate-300 mb-12 leading-relaxed max-w-xl">
               We are continuously looking for additional sponsors to help
